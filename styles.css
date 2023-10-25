@@ -1,6 +1,6 @@
 body {
   margin: 0px;
-  height: 100%;
+  height: 100vh;
   background-color: #fff7d4;
   overflow: hidden;
   display: grid;                        /*  auto    1fr      auto           */
