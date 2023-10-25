@@ -3,7 +3,6 @@ body {
   height: 100%;
   background-color: #fff7d4;
   overflow: hidden;
-
   display: grid;                        /*  auto    1fr      auto           */
   grid-template-columns: auto 1fr auto; /*  "header header   header" auto   */
   grid-template-rows: auto 1fr auto;    /*  "nav    article  adside" 1fr    */
