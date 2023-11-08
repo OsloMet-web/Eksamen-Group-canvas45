@@ -199,6 +199,16 @@ footer {
 }
 
 /*Index sin spesifikke style */
+.index-grid-bilde{
+  overflow: hidden;
+  display: grid;                        /*  --------  1fr  ---------        */
+  grid-template-columns: 1fr;           /*  "header header   header" auto   */
+  grid-template-rows: auto auto;
+}
+#hoved-bilde{
+  width: 1fr;
+  height: auto;
+}
 
 /*accessibillity sin spesifikke style */
 
