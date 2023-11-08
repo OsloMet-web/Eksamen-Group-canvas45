@@ -210,8 +210,7 @@ footer {
   width: 100%;
 }
 .Gallery img {
-  align-self: center;
-  width: 35em;
+  width: 350px;
   height: auto;
 }
 .desc {
