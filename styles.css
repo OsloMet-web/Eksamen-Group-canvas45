@@ -204,7 +204,20 @@ footer {
 /*accessibillity sin spesifikke style */
 
 /*Topical sin spesifikke style */
-
+.Gallery{
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 100%;
+}
+.Gallery img {
+  width: 350px;
+  height: auto;
+}
+.desc {
+  padding: 15px;
+  text-align: center;
+}
 /*Kantina sin spesifikke style */
 
 /*Bibliotek sin spesifikke style */
