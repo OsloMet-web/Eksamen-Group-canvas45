@@ -4,14 +4,15 @@ body {
   margin: 0px;
   height: 100vh;
   background-color: #F6EEE6;
-  overflow: hidden;
-  display: grid;                        /*  --------  1fr  ---------        */
-  grid-template-columns: 1fr;           /*  "header header   header" auto   */
-  grid-template-rows: auto 1fr auto;    /*  "nav    article  adside" 1fr    */
-}                                       /*  "footer footer   footer" auto   */
+  overflow-x: hidden;
+  display: grid;                        /*  --------  1fr  ----------       */
+  grid-template-columns: 1fr;           /*  "navbar   navbar   navbar" auto */
+  grid-template-rows: auto 1fr auto;    /*  "article  article  article" 1fr */
+}                                       /*  "footer   footer   footer" auto */
 
-/**/
+/*Navigation bar w/ hamburgertext*/
 nav {
+  grid-area: 1 / 1 / 2 / 2;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -21,10 +22,11 @@ nav {
   padding: 1em;
 }
 
-.menu {
+.menu { /*
   display: flex;
   flex-direction: row;
   list-style-type: none;
+*/
   margin: 0;
   padding: 0;
 }
@@ -54,7 +56,7 @@ nav {
   display: none;
 }
 
-.menu-button, /*Designe of the three white lines that make out the hamburger meny icon*/
+.menu-button, /*Design of the three white lines that make out the hamburger meny icon*/
 .menu-button::before,
 .menu-button::after {
   display: block;
@@ -90,20 +92,20 @@ nav {
   transform: rotate(-405deg);
 }
 
-@media (max-width: 700px) {
   .menu-button-container {
     display: flex;
   }
   .menu {
     position: absolute;
     top: 0;
-    margin-top: 50px;
+    margin-top: 5em;
     left: 0;
     flex-direction: column;
     width: 100%;
     justify-content: center;
     align-items: center;
   }
+  
   #menu-toggle ~ .menu li {
     height: 0;
     margin: 0;
@@ -127,7 +129,6 @@ nav {
     background-color: rgb(238, 224, 201, 0.9);
   }
 
-}
 
 article {
   grid-area: 2 / 1 / 3 / 2;
@@ -184,7 +185,7 @@ footer {
     margin: 0;
 }
   
-@media (max-width: 100%) {
+@media (max-width: 700px) { /*When the page is less than 700px, the design changes*/
     .footer-content {
         grid-template-columns: repeat(1, 1fr);
         row-gap: 20px;
@@ -199,11 +200,34 @@ footer {
 }
 
 /*Index sin spesifikke style */
+.index-grid-bilde{
+  overflow: hidden;
+  display: grid;                        /*  --------  1fr  ---------        */
+  grid-template-columns: 1fr;           /*  "header header   header" auto   */
+  grid-template-rows: auto auto;
+}
+#hoved-bilde{
+  width: 1fr;
+  height: auto;
+}
 
 /*accessibillity sin spesifikke style */
 
 /*Topical sin spesifikke style */
-
+.Gallery{
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 100%;
+}
+.Gallery img {
+  width: 350px;
+  height: auto;
+}
+.desc {
+  padding: 15px;
+  text-align: center;
+}
 /*Kantina sin spesifikke style */
 
 .Kantine-bilde {
