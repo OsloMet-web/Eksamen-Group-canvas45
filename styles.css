@@ -201,13 +201,13 @@ footer {
 
 /*Index sin spesifikke style */
 .index-grid-bilde{
-  overflow: hidden;
   display: grid;                        /*  --------  1fr  ---------        */
   grid-template-columns: 1fr;           /*  "header header   header" auto   */
   grid-template-rows: auto auto;
 }
 #hoved-bilde{
-  width: 1fr;
+  grid-area: 1 / 1 / 2 / 2;
+  width: 100%;
   height: auto;
 }
 
