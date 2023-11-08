@@ -231,7 +231,7 @@ footer {
 /*Kantina sin spesifikke style */
 
 .Kantine-bilde {
-  width: 300px 
+  width: 50%; 
   height: auto;
   border: 1px solid #000
   margin: 10px: 
