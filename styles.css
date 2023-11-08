@@ -206,4 +206,12 @@ footer {
 
 /*Kantina sin spesifikke style */
 
+.Kantine-bilde {
+  width: 300px 
+  height: auto;
+  border: 1px solid #000
+  margin: 10px: 
+}
+
+
 /*Bibliotek sin spesifikke style */
