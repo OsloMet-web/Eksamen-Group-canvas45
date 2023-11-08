@@ -4,14 +4,15 @@ body {
   margin: 0px;
   height: 100vh;
   background-color: #F6EEE6;
-  overflow: hidden;
-  display: grid;                        /*  --------  1fr  ---------        */
-  grid-template-columns: 1fr;           /*  "header header   header" auto   */
-  grid-template-rows: auto 1fr auto;    /*  "nav    article  adside" 1fr    */
-}                                       /*  "footer footer   footer" auto   */
+  overflow-x: hidden;
+  display: grid;                        /*  --------  1fr  ----------       */
+  grid-template-columns: 1fr;           /*  "navbar   navbar   navbar" auto */
+  grid-template-rows: auto 1fr auto;    /*  "article  article  article" 1fr */
+}                                       /*  "footer   footer   footer" auto */
 
-/**/
+/*Navigation bar w/ hamburgertext*/
 nav {
+  grid-area: 1 / 1 / 2 / 2;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -54,7 +55,7 @@ nav {
   display: none;
 }
 
-.menu-button, /*Designe of the three white lines that make out the hamburger meny icon*/
+.menu-button, /*Design of the three white lines that make out the hamburger meny icon*/
 .menu-button::before,
 .menu-button::after {
   display: block;
@@ -90,14 +91,14 @@ nav {
   transform: rotate(-405deg);
 }
 
-@media (max-width: 700px) {
+@media screen and (max-width: 1024px) {
   .menu-button-container {
     display: flex;
   }
   .menu {
     position: absolute;
     top: 0;
-    margin-top: 50px;
+    margin-top: 5em;
     left: 0;
     flex-direction: column;
     width: 100%;
