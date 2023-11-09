@@ -199,16 +199,56 @@ footer {
     }
 }
 
+
 /*Index sin spesifikke style */
-.index-grid-bilde{
-  display: grid;                        /*  --------  1fr  ---------        */
-  grid-template-columns: 1fr;           /*  "header header   header" auto   */
+.index-container {
+  display: grid;
   grid-template-rows: auto auto;
+  grid-template-columns: 1fr 6fr 1fr;
+  
 }
-#hoved-bilde{
-  grid-area: 1 / 1 / 2 / 2;
-  width: 100%;
-  height: auto;
+.index-hoved-bilde{
+  grid-area: 1 / 1 / 2 / 4;   /* ToSlayADragon YT */
+}
+.index-margin-venstre{
+  grid-area: 1 / 2 / 2 / 3;
+}
+.index-margin-høyre{
+  grid-area: 3 / 2 / 4 / 3;
+}
+.index-innhold{
+  grid-area: 2 / 2 / 3 / 3;
+  display: flex;               /* youtube: https://youtu.be/phWxA89Dy94*/
+  flex-direction: column;
+  justify-content: space-around;
+}
+.section1{
+  display: flex;
+  justify-content: space-between;
+  gap: 1em;
+}
+.sec1venstre{
+  flex: 1;
+  width: 50%;
+}
+.sec1høyre{
+  flex: 1;
+}
+.section2{
+  display: flex;
+  justify-content: space-between;
+}
+.sec2venstre{
+}
+.sec2høyre{
+}
+.section3{
+  display: flex;
+  justify-content: space-between;
+}
+.sec3venstre{
+}
+.sec3høyre{
 }
 
 /*accessibillity sin spesifikke style */
