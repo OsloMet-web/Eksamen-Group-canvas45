@@ -129,6 +129,10 @@ nav {
     background-color: rgb(238, 224, 201, 0.9);
   }
 
+  .current-page {
+    border-bottom: 3px solid #DDB892;
+  }
+
 
 article {
   grid-area: 2 / 1 / 3 / 2;
