@@ -301,6 +301,38 @@ div.desc {
   border: 1px solid #000;
   margin: 10px;
 }
+div.gallery2 {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 200px;
+}
+
+div.gallery:hover2 {
+  border: 1px solid #777;
+}
+
+div.desc2 {
+  padding: 15px;
+  text-align: center;
+}
+
+.inline-container2 {
+  display: inline-grid;
+  grid-template-columns: auto auto auto;
+  background-color: #2195f300;
+  padding: 10px;
+}
+
+.grid-item2 {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid black;
+  padding: 20px;
+  margin-top: 5px;
+  font-size: 30px;
+  text-align: center;
+}
+  
 
 
 /*Bibliotek sin spesifikke style */
