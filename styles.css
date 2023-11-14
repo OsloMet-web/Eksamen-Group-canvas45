@@ -309,11 +309,18 @@ div.desc {
 }
 /*Kantina sin spesifikke style */
 
-.Kantine-bilde {
+.kantine-bilde {
   width: 50%; 
   height: auto;
   border: 1px solid #000;
   margin: 10px;
+
+}
+.kantine-bilde2 {
+  width: 50%;
+  height: auto;
+  border: 1px solid #000;
+  margin: 10 px; 
 }
 
   
