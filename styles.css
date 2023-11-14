@@ -93,7 +93,7 @@ nav {
 
 /*Turns one of the lines -405 degrees */
 #menu-toggle:checked + .menu-button-container .menu-button::after {
-  margin-top: 0px; /*Allows the line to use the whole felxbox*/
+  margin-top: 0px; /*Allows the line to use the whole flexbox*/
   transform: rotate(-405deg);
 }
 
@@ -327,8 +327,6 @@ img{
   border: 1px solid #000;
   margin: 10 px; 
 }
-
-  
 
 
 /*Bibliotek sin spesifikke style */
