@@ -93,7 +93,7 @@ nav {
 
 /*Turns one of the lines -405 degrees */
 #menu-toggle:checked + .menu-button-container .menu-button::after {
-  margin-top: 0px; /*Allows the line to use the whole felxbox*/
+  margin-top: 0px; /*Allows the line to use the whole flexbox*/
   transform: rotate(-405deg);
 }
 
@@ -203,12 +203,15 @@ footer {
 }
 
 
-/*Index sin spesifikke style */
+/*Index sin spesifikke style */   /* bytte divs med section */
 .index-container {
   display: grid;
   grid-template-rows: auto auto;
-  grid-template-columns: 1fr 6fr 1fr;
+  grid-template-columns: 1fr auto 1fr;*/
   
+}
+#hoved-bilde{
+  width: 100%;
 }
 .index-hoved-bilde{
   grid-area: 1 / 1 / 2 / 4;   /* ToSlayADragon YT */
@@ -242,31 +245,68 @@ footer {
 .section1{
   display: flex;
   justify-content: space-between;
+  padding: 1em;
   gap: 1em;
+  flex-wrap: wrap;
+  align-content: space-between;
 }
-.sec1venstre{
+.sec1venstre{    /* problemet er at den responderer ikke til sec1venstre/høyre. ingen endringer i klassene endrer siden. Inline kode funker på dem */
   flex: 1;
-  width: 50%;
+  background-color: rgb(213, 255, 255);
+  padding-left: 1em;
+  padding-right: 1em;
 }
-.sec1høyre{
+.sec1høyre{ /* legge til .section1 først?*/
   flex: 1;
 }
 .section2{
   display: flex;
   justify-content: space-between;
+  padding: 1em;
 }
 .sec2venstre{
+  flex: 1;
 }
 .sec2høyre{
+  flex: 1;
+  background-color: rgb(218, 255, 255);
+  padding-left: 1em;
+  padding-right: 1em;
 }
 .section3{
   display: flex;
   justify-content: space-between;
+  padding: 1em;
 }
 .sec3venstre{
+  flex: 2;
+  background-color: rgb(218, 255, 255);
+  padding-left: 1em;
+  padding-right: 1em;
 }
 .sec3høyre{
+  flex: 1;
 }
+img{
+  width: 100%;
+  min-width: 50%;
+}
+@media (max-width: 700px){
+  .index-innhold{
+    align-items: center;
+  }
+  .section1{
+    flex-direction: column;
+  }
+  .section2{
+    flex-direction: column;
+  }
+  .section3{
+    flex-direction: column;
+  }
+}
+
+
 
 /*accessibillity sin spesifikke style */
 
@@ -293,7 +333,16 @@ footer {
   margin: 10 px; 
 }
 
-  
-
 
 /*Bibliotek sin spesifikke style */
+
+/* bli enige om:
+- kode shorthand/longhand, tengel anbefaler long
+- før vi er ferdige ordne CSS struktur  
+- liten bokstav på navn og klasser
+- selvforklarende navn
+- kommentere kode, og kilde om det trengs
+*/
+/*
+- fjerne tall i klassenavn
+*/
