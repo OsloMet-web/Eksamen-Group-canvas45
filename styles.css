@@ -311,12 +311,7 @@ img{
 /*accessibillity sin spesifikke style */
 
 /*Topical sin spesifikke style */
-#topical-bilde{
-  width: 100%;
-  max-height: 40em;
-  object-fit: cover;
-  object-position: center;
-}
+
 /*Kantina sin spesifikke style */
 
 .kantine-bilde {
