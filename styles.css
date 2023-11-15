@@ -20,16 +20,11 @@ body {
 }
 .main-flexbox{
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   align-content: space-between;
-  margin: 1em 1em;
 }
 .item{
   flex: 1;
-  background-color: hsl(30, 55%, 85%);
-  border: 3px solid #decebd;
-  border-radius: 25px;
-  min-width: 50%;
 }
 /* fordeling horisontalt skjer i individuelle felt, avhenging av layout ()()()SEAN()()() */
 
@@ -230,14 +225,11 @@ footer {
   max-width: 100%;
   min-width: 70%;
 }
-.index-flexbox-a{
+.index-flexitem-a{
   flex: 1;
   background-color: hsl(30, 55%, 85%);
-  border: 3px solid #decebd;
-  border-radius: 25px;
-  min-width: 50%;
 }
-.index-flexbox-b{
+.index-flexitem-b{
   flex: 1;
   border: 3px solid black;
   background-color: aqua;
