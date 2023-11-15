@@ -29,7 +29,15 @@ body {
   border: 1px dashed black;
   align-content: space-between;
   margin: 1em 1em;
-  border: 1px dashed black;
+}
+.main-flexbox-background{
+  display: flex;
+  flex-wrap: nowrap;
+  align-content: space-between;
+  margin: 1em 1em;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: hsl(30, 55%, 85%);
 }
 .main-flexbox-column{
   border: 1px dashed black;
@@ -248,14 +256,40 @@ footer {
 }
 .index-flexitem-a{
   flex: 2;
-  background-color: hsl(30, 55%, 85%);
   padding: 0.5em;
 }
 .index-flexitem-b{
   flex: 1;
-  border: 3px solid black;
-  background-color: aqua;
-  min-width: 50%;
+  background-color: hsl(30, 55%, 85%);
+  border-radius: 10px;
+  padding: 0.5em;
+  margin: 0rem 1rem;
+}
+.index-flexitem-c{
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+.font-column{
+  font-size: 1.5rem;
+}
+.index-flexitem-b h2{
+  font-size: 2rem;
+}
+@media (max-width:768px){
+  .main-flexbox{
+    flex-direction: column;
+  }
+  .index-flexitem-b{
+    margin: 0.5em 0em;
+  }
+  .index-flexitem-a{
+    order: 1;
+  }
+  .index-flexitem-c{
+    order: 3;
+  }
+
 }
 /*
   .img-fade {
@@ -320,7 +354,6 @@ footer {
   width: 100%; 
   height: auto;
   border: 1px solid #000;
-
 }
 .kantine-bilde2 {
   width: 100%;
@@ -330,7 +363,7 @@ footer {
 }
 .kantine-bilde3 {
   width: 100%;
-  height: auto;
+  object-fit: cover;
   border: 1px solid #000;
 }
 .font-size-kantine {
