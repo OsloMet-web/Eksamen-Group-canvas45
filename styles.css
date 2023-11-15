@@ -26,9 +26,11 @@ body {
   margin: 0 auto;
 }
 .main-flexbox{
+  display: flex;
   border: 1px dashed black;
   align-content: space-between;
   margin: 1em 1em;
+  flex-wrap: nowrap;
 }
 .main-flexbox-background{
   display: flex;
@@ -48,7 +50,7 @@ body {
   border: 1px dashed black;
 }
 .item{
-  flex: 3;
+  flex: 3;  /* pga Pia sin side, burde fikses */
   border: 1px dashed black;
 }
 .item-background{
@@ -288,7 +290,7 @@ h1{
   font-weight: 400;
 }
 @media (max-width:768px){
-  .main-flexbox{
+  .main-flexbox-background{
     flex-direction: column;
   }
   .index-flexitem-b{
