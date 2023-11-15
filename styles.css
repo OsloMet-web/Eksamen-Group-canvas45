@@ -21,15 +21,19 @@ body {
   flex-direction: column;
   justify-content: space-around;
   flex-wrap: nowrap;
+  width: 98%;
+  margin: 0 auto;
 }
 .main-flexbox{
   display: flex;
-  flex-wrap: wrap;
   align-content: space-between;
   margin: 1em 1em;
 }
 .item{
   flex: 1;
+}
+
+.item-background {
   background-color: hsl(30, 55%, 85%);
   border: 3px solid #decebd;
   border-radius: 25px;
