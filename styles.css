@@ -315,7 +315,6 @@ footer {
   width: 100%; 
   height: auto;
   border: 1px solid #000;
-
 }
 .kantine-bilde2 {
   width: 100%;
@@ -325,7 +324,7 @@ footer {
 }
 .kantine-bilde3 {
   width: 100%;
-  height: auto;
+  object-fit: cover;
   border: 1px solid #000;
 }
 .font-size-kantine {
