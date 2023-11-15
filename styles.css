@@ -101,7 +101,6 @@ nav {
 }
 
 @media screen and (max-width: 768px) {
-  
 
 .menu-button, /*Design of the three white lines that make out the hamburger meny icon*/
 .menu-button::before,
@@ -382,3 +381,16 @@ footer {
 /*
 - fjerne tall i klassenavn
 */
+
+.small-picture {
+  width: auto;
+  height: 250;
+}
+.medium-picture {
+  width: auto;
+  height: 500;
+}
+.big-picture {
+  width: auto;
+  height: 750;
+}
