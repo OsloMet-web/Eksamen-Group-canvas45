@@ -315,12 +315,22 @@ footer {
 .infotekst{
   background-color: bisque;
   padding: 10px;
-  max-width: 50%;
+  width: 50%;
   margin-right: 10px;
 }
 .bildekilde{
   background-color: #e3a4db;
   padding: 5px;
+}
+.galleri{
+  margin-right: 2px;
+  background-color: bisque;
+  margin: 0em 2em;
+}
+.galleribilde{
+  width: 100%;
+  object-fit: cover;
+  border: solid black 2px;
 }
 
 /*Kantina sin spesifikke style */
