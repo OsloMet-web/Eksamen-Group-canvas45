@@ -6,7 +6,7 @@
 body {
   margin: 0px;
   height: 100vh;
-  background-color: rgb(246, 238, 230);
+  background-color: white;/* rgb(246, 238, 230) */
   font-family: "Gill Sans", sans-serif;
   overflow-x: hidden;
   display: grid;                        /*  --------  1fr  ----------       */
@@ -39,7 +39,7 @@ body {
   margin: 1em 1em;
   border-radius: 10px;
   overflow: hidden;
-  background-color: hsl(30, 55%, 85%);
+  background-color: rgb(246, 238, 230);
 }
 .main-flexbox-column{
   border: 1px dashed black;
@@ -69,7 +69,7 @@ nav {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  background-color: rgb(221, 199, 160);
+  background-color: rgb(221, 199, 160); /*rgb(221, 199, 160)*/
   z-index: 99;
   width: 100%;
   height: 50px;
@@ -268,7 +268,7 @@ footer {
 }
 .index-flexitem-b{
   flex: 1;
-  background-color: hsl(30, 55%, 85%);
+  background-color: rgb(246, 238, 230);
   border-radius: 10px;
   padding: 0.5em;
   margin: 0rem 1rem;
@@ -287,7 +287,7 @@ footer {
 h1{
   font-size: 5rem;
   text-align: center;
-  font-weight: 400;
+  font-weight: 600;
 }
 @media (max-width:768px){
   .main-flexbox-background{
@@ -315,7 +315,7 @@ h1{
     bottom: 0;
     left: 0;
     right: 0;
-    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%,rgb(120, 115, 111) 100%); /* 246, 238, 230 */
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%,rgb(255, 255, 255, 1) 100%); /* 246, 238, 230 */
     height: 50%;  
   }
 
