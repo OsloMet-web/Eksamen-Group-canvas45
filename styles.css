@@ -328,7 +328,9 @@ footer {
   height: auto;
   border: 1px solid #000;
 }
-
+.font-size-kantine {
+  font-size: 1.3rem;
+}
 
 /*Bibliotek sin spesifikke style */
 
