@@ -7,6 +7,7 @@ body {
   margin: 0px;
   height: 100vh;
   background-color: rgb(246, 238, 230);
+  font-family: "Gill Sans", sans-serif;
   overflow-x: hidden;
   display: grid;                        /*  --------  1fr  ----------       */
   grid-template-columns: 1fr;           /*  "-------- navbar --------" auto */
@@ -25,27 +26,21 @@ body {
   margin: 0 auto;
 }
 .main-flexbox{
-  display: flex;
-  flex-wrap: nowrap;
+  border: 1px dashed black;
   align-content: space-between;
   margin: 1em 1em;
 }
 .main-flexbox-column{
+  border: 1px dashed black;
   display: flex;
   flex: 1;
   flex-wrap: nowrap;
   flex-direction: column;
-  margin: 1em 1em;
+  margin: ;
 }
 .item{
+  border: 1px dashed black;
   flex: 1;
-}
-
-.item-background {
-  background-color: hsl(30, 55%, 85%);
-  border: 3px solid #decebd;
-  border-radius: 25px;
-  min-width: 50%;
 }
 /* fordeling horisontalt skjer i individuelle felt, avhenging av layout ()()()SEAN()()() */
 
@@ -174,7 +169,7 @@ nav {
 
 article {
   grid-area: article;
-  padding-top: 50px;
+  margin-top: 50px;
 }
 
 
@@ -250,11 +245,14 @@ footer {
   max-width: 100%;
   min-width: 70%;
 }
-.index-flexitem-a{
+.index-flexbox-a{
   flex: 1;
   background-color: hsl(30, 55%, 85%);
+  border: 3px solid #decebd;
+  border-radius: 25px;
+  min-width: 50%;
 }
-.index-flexitem-b{
+.index-flexbox-b{
   flex: 1;
   border: 3px solid black;
   background-color: aqua;
