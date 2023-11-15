@@ -24,6 +24,13 @@ body {
   align-content: space-between;
   margin: 1em 1em;
 }
+.item{
+  flex: 1;
+  background-color: hsl(30, 55%, 85%);
+  border: 3px solid #decebd;
+  border-radius: 25px;
+  min-width: 50%;
+}
 /* fordeling horisontalt skjer i individuelle felt, avhenging av layout ()()()SEAN()()() */
 
 /*Navigation bar w/ hamburgermenu*/
@@ -259,73 +266,10 @@ footer {
 }
 .index-innhold{
   grid-area: 2 / 2 / 3 / 3;
-  display: flex;               /* youtube: https://youtu.be/phWxA89Dy94*/
+  display: flex;                youtube: https://youtu.be/phWxA89Dy9
   flex-direction: column;
   justify-content: space-around;
-}
-.section1{
-  display: flex;
-  justify-content: space-between;
-  padding: 1em;
-  gap: 1em;
-  flex-wrap: wrap;
-  align-content: space-between;
-}
-.sec1venstre{    /* problemet er at den responderer ikke til sec1venstre/høyre. ingen endringer i klassene endrer siden. Inline kode funker på dem */
-  flex: 1;
-  background-color: rgb(213, 255, 255);
-  padding-left: 1em;
-  padding-right: 1em;
-}
-.sec1høyre{ /* legge til .section1 først?*/
-  flex: 1;
-}
-.section2{
-  display: flex;
-  justify-content: space-between;
-  padding: 1em;
-}
-.sec2venstre{
-  flex: 1;
-}
-.sec2høyre{
-  flex: 1;
-  background-color: rgb(218, 255, 255);
-  padding-left: 1em;
-  padding-right: 1em;
-}
-.section3{
-  display: flex;
-  justify-content: space-between;
-  padding: 1em;
-}
-.sec3venstre{
-  flex: 2;
-  background-color: rgb(218, 255, 255);
-  padding-left: 1em;
-  padding-right: 1em;
-}
-.sec3høyre{
-  flex: 1;
-}
-img{
-  width: 100%;
-  min-width: 90%;
-}
-@media (max-width: 700px){
-  .index-innhold{
-    align-items: center;
-  }
-  .section1{
-    flex-direction: column;
-  }
-  .section2{
-    flex-direction: column;
-  }
-  .section3{
-    flex-direction: column;
-  }
-}
+}*/
 
 
 
