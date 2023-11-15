@@ -29,6 +29,13 @@ body {
   align-content: space-between;
   margin: 1em 1em;
 }
+.main-flexbox-column{
+  display: flex;
+  flex: 1;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  margin: 1em 1em;
+}
 .item{
   flex: 1;
 }
