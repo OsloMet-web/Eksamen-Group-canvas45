@@ -325,23 +325,25 @@ footer {
 /*Topical sin spesifikke style */
 #førstetest{
   width: 100%;
-  height: 250px;
+  height: 300px;
   object-fit: cover;
 }
 .infotekst{
   background-color: bisque;
   padding: 10px;
   width: 50%;
-  margin-right: 10px;
+  margin-right: 2em;
 }
 .bildekilde{
-  background-color: #e3a4db;
+  background-color: bisque;
   padding: 5px;
+  text-align: left;
 }
 .galleri{
   margin-right: 2px;
   background-color: bisque;
-  margin: 0em 2em;
+  margin: 0em 1em;
+  padding: 10px;
 }
 .galleribilde{
   width: 100%;
