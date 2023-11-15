@@ -51,6 +51,12 @@ body {
   flex: 3;
   border: 1px dashed black;
 }
+.item-background{
+  flex: 3;
+  background-color: hsl(30, 55%, 85%);
+  border-radius: 10px;
+}
+
 /* fordeling horisontalt skjer i individuelle felt, avhenging av layout ()()()SEAN()()() */
 
 /*Navigation bar w/ hamburgermenu*/
@@ -274,7 +280,12 @@ footer {
   font-size: 1.5rem;
 }
 .index-flexitem-b h2{
-  font-size: 2rem;
+  font-size: 1.5rem;
+}
+h1{
+  font-size: 5rem;
+  text-align: center;
+  font-weight: 400;
 }
 @media (max-width:768px){
   .main-flexbox{
@@ -291,7 +302,7 @@ footer {
   }
 
 }
-/*
+
   .img-fade {
     position: relative; 
   }
@@ -302,22 +313,9 @@ footer {
     bottom: 0;
     left: 0;
     right: 0;
-    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%,rgb(246, 238, 230, 1) 100%);
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%,rgb(120, 115, 111) 100%); /* 246, 238, 230 */
     height: 50%;  
   }
-
-.index-margin-venstre{
-  grid-area: 1 / 2 / 2 / 3;
-}
-.index-margin-høyre{
-  grid-area: 3 / 2 / 4 / 3;
-}
-.index-innhold{
-  grid-area: 2 / 2 / 3 / 3;
-  display: flex;                youtube: https://youtu.be/phWxA89Dy9D
-  flex-direction: column;
-  justify-content: space-around;
-}*/
 
 
 /*accessibillity sin spesifikke style */
