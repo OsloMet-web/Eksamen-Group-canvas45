@@ -36,7 +36,6 @@ body {
   flex: 1;
   flex-wrap: nowrap;
   flex-direction: column;
-  margin: 1em 1em;
   border: 1px dashed black;
 }
 .item{
