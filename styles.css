@@ -18,25 +18,13 @@ body {
   justify-content: space-around;
   flex-wrap: nowrap;
 }
-.main-flexbox-a{
+.main-flexbox{
   display: flex;
-  justify-content: space-between;/* vil vi ha? */
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   align-content: space-between;
+  margin: 1em 1em;
 }
-/*
-.main-flexbox-b{
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: nowrap;
-  align-content: space-between;
-}
-.main-flexbox-c{
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: nowrap;
-  align-content: space-between;
-}*/
+/* fordeling horisontalt skjer i individuelle felt, avhenging av layout ()()()SEAN()()() */
 
 /*Navigation bar w/ hamburgermenu*/
 nav {
@@ -52,8 +40,6 @@ nav {
   height: 50px;
   padding: 1em;
 }
-
-
 .menu {
   display: flex;
   flex-direction: row;
@@ -230,41 +216,25 @@ footer {
 
 
 /*Index sin spesifikke style */   /* bytte divs med section */
-#hoved-bilde{
+#main-photo{
   width: 100%;
 }
-.sean-flexbox{
-
+.image-size{
+  max-width: 100%;
+  min-width: 70%;
 }
-.index-flexbox-a-left{
+.index-flexbox-a{
   flex: 1;
-  background-color: red;
-  border: 3px solid rgb(33, 7, 7);
+  background-color: hsl(30, 55%, 85%);
+  border: 3px solid #decebd;
+  border-radius: 25px;
+  min-width: 50%;
 }
-.index-flexbox-a-right{
-  flex: 1;
-  border: 3px solid black;
-  background-color: aqua;
-}
-.index-flexbox-b-left{
-  flex: 1;
-  background-color: red;
-  border: 3px solid rgb(33, 7, 7);
-}
-.index-flexbox-b-right{
+.index-flexbox-b{
   flex: 1;
   border: 3px solid black;
   background-color: aqua;
-}
-.index-flexbox-c-left{
-  flex: 1;
-  background-color: red;
-  border: 3px solid rgb(33, 7, 7);
-}
-.index-flexbox-c-right{
-  flex: 1;
-  border: 3px solid black;
-  background-color: aqua;
+  min-width: 50%;
 }
 /*
   .img-fade {
