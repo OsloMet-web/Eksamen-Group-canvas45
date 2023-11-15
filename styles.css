@@ -6,7 +6,7 @@
 body {
   margin: 0px;
   height: 100vh;
-  background-color: rgb(246, 238, 230);
+  background-color: white;/* rgb(246, 238, 230) */
   font-family: "Gill Sans", sans-serif;
   overflow-x: hidden;
   display: grid;                        /*  --------  1fr  ----------       */
@@ -26,9 +26,11 @@ body {
   margin: 0 auto;
 }
 .main-flexbox{
+  display: flex;
   border: 1px dashed black;
   align-content: space-between;
   margin: 1em 1em;
+  flex-wrap: nowrap;
 }
 .main-flexbox-background{
   display: flex;
@@ -37,7 +39,7 @@ body {
   margin: 1em 1em;
   border-radius: 10px;
   overflow: hidden;
-  background-color: hsl(30, 55%, 85%);
+  background-color: rgb(246, 238, 230);
 }
 .main-flexbox-column{
   border: 1px dashed black;
@@ -48,9 +50,15 @@ body {
   border: 1px dashed black;
 }
 .item{
-  flex: 3;
+  flex: 3;  /* pga Pia sin side, burde fikses */
   border: 1px dashed black;
 }
+.item-background{
+  flex: 3;
+  background-color: hsl(30, 55%, 85%);
+  border-radius: 10px;
+}
+
 /* fordeling horisontalt skjer i individuelle felt, avhenging av layout ()()()SEAN()()() */
 
 /*Navigation bar w/ hamburgermenu*/
@@ -61,7 +69,7 @@ nav {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  background-color: rgb(221, 199, 160);
+  background-color: rgb(221, 199, 160); /*rgb(221, 199, 160)*/
   z-index: 99;
   width: 100%;
   height: 50px;
@@ -259,7 +267,7 @@ footer {
 }
 .index-flexitem-b{
   flex: 1;
-  background-color: hsl(30, 55%, 85%);
+  background-color: rgb(246, 238, 230);
   border-radius: 10px;
   padding: 0.5em;
   margin: 0rem 1rem;
@@ -273,10 +281,15 @@ footer {
   font-size: 1.5rem;
 }
 .index-flexitem-b h2{
-  font-size: 2rem;
+  font-size: 1.5rem;
+}
+h1{
+  font-size: 5rem;
+  text-align: center;
+  font-weight: 600;
 }
 @media (max-width:768px){
-  .main-flexbox{
+  .main-flexbox-background{
     flex-direction: column;
   }
   .index-flexitem-b{
@@ -290,7 +303,7 @@ footer {
   }
 
 }
-/*
+
   .img-fade {
     position: relative; 
   }
@@ -301,22 +314,9 @@ footer {
     bottom: 0;
     left: 0;
     right: 0;
-    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%,rgb(246, 238, 230, 1) 100%);
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%,rgb(255, 255, 255, 1) 100%); /* 246, 238, 230 */
     height: 50%;  
   }
-
-.index-margin-venstre{
-  grid-area: 1 / 2 / 2 / 3;
-}
-.index-margin-høyre{
-  grid-area: 3 / 2 / 4 / 3;
-}
-.index-innhold{
-  grid-area: 2 / 2 / 3 / 3;
-  display: flex;                youtube: https://youtu.be/phWxA89Dy9D
-  flex-direction: column;
-  justify-content: space-around;
-}*/
 
 
 /*accessibillity sin spesifikke style */
@@ -324,23 +324,25 @@ footer {
 /*Topical sin spesifikke style */
 #førstetest{
   width: 100%;
-  height: 250px;
+  height: 300px;
   object-fit: cover;
 }
 .infotekst{
-  background-color: bisque;
+  background-color: hsl(30, 55%, 85%);
   padding: 10px;
   width: 50%;
-  margin-right: 10px;
+  margin-right: 2em;
 }
 .bildekilde{
-  background-color: #e3a4db;
+  background-color: hsl(30, 55%, 85%);
   padding: 5px;
+  text-align: left;
 }
 .galleri{
   margin-right: 2px;
-  background-color: bisque;
-  margin: 0em 2em;
+  background-color: hsl(30, 55%, 85%);
+  margin: 0em 1em;
+  padding: 10px;
 }
 .galleribilde{
   width: 100%;
