@@ -329,19 +329,19 @@ footer {
   object-fit: cover;
 }
 .infotekst{
-  background-color: bisque;
+  background-color: hsl(30, 55%, 85%);
   padding: 10px;
   width: 50%;
   margin-right: 2em;
 }
 .bildekilde{
-  background-color: bisque;
+  background-color: hsl(30, 55%, 85%);
   padding: 5px;
   text-align: left;
 }
 .galleri{
   margin-right: 2px;
-  background-color: bisque;
+  background-color: hsl(30, 55%, 85%);
   margin: 0em 1em;
   padding: 10px;
 }
