@@ -18,17 +18,13 @@ body {
   "footer";
 }                                       /*  "------- footer ---------" auto */
 .main-container{
-  display: flex;  
-  flex-wrap: nowrap;             /* youtube: https://youtu.be/phWxA89Dy94*/
-  flex-direction: column;
-  justify-content: space-around;
-  width: 98%;
+  width: 97%;
   margin: 0 auto;
 }
 .main-flexbox{
-  display: flex;
+  display: flex;  /* youtube: https://youtu.be/phWxA89Dy94*/
   flex-wrap: nowrap;
-  align-content: space-between;
+  justify-content: space-between;
   margin: 1em 1em;
 
   border: 1px dashed black;
@@ -46,9 +42,8 @@ body {
   flex-direction: column;
   border: 1px dashed black;
 }
-.item{ /* pga Pia sin side, burde fikses */
+.item{
   border: 1px dashed black;
-  padding: 0.5rem;
 }
 .item-background{
   flex: 3;
@@ -380,7 +375,7 @@ article > p{
   width: 100%;
   height: auto;
   border: 1px solid #000;
-  margin: 10 px; 
+  margin: 10px; 
 }
 .main-img-campus-places {
   width: 100%;
@@ -427,7 +422,7 @@ span{
 }
 .capturebox-container {
 width: 100%;
-max-width: 1920px;
+max-width: 100%;
 display: flex;
 flex-direction: column;
 gap: 2em;
@@ -473,7 +468,8 @@ li.capturebox-content {
   .second-row-col4-capturebox {
     grid-area: 2 / 3 / 3 / 6;
   }
-/*
+
+  /*
 .image-title {
   position: relative;
 }
@@ -488,4 +484,4 @@ li.capturebox-content {
   background-color: black;
   color: white;
 }
-*/
+*/ /
