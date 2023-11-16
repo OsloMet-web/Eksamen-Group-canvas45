@@ -6,57 +6,57 @@
 body {
   margin: 0px;
   height: 100vh;
-  background-color: rgb(246, 238, 230);
+  background-color: white;/* rgb(246, 238, 230) */
+  font-family: "Gill Sans", sans-serif;
   overflow-x: hidden;
   display: grid;                        /*  --------  1fr  ----------       */
   grid-template-columns: 1fr;           /*  "-------- navbar --------" auto */
   grid-template-rows: auto 1fr auto;    /*  "------- article --------" 1fr  */
-  grid-template-areas: 
+  grid-template-areas:                  /*  "------- footer ---------" auto */
   "nav"
   "article"
   "footer";
 }                                       /*  "------- footer ---------" auto */
 .main-container{
-  display: flex;               /* youtube: https://youtu.be/phWxA89Dy94*/
-  flex-direction: column;
-  justify-content: space-around;
-  flex-wrap: nowrap;
-  width: 98%;
+  width: 97%;
   margin: 0 auto;
 }
 .main-flexbox{
-  display: flex;
+  display: flex;  /* youtube: https://youtu.be/phWxA89Dy94*/
   flex-wrap: nowrap;
-  align-content: space-between;
   margin: 1em 1em;
+  gap: 1em;
+  border: 1px dashed black;
 }
 .main-flexbox-background{
   display: flex;
   flex-wrap: nowrap;
-  align-content: space-between;
-  margin: 1em 1em;
+  margin: 1em 0em;
   border-radius: 10px;
-  overflow: hidden;
-  background-color: hsl(30, 55%, 85%);
+  background-color: rgb(246, 238, 230);
 }
 .main-flexbox-column{
   display: flex;
-  flex: 1;
   flex-wrap: nowrap;
   flex-direction: column;
   border: 1px dashed black;
+  flex: 2;
 }
 .item{
-  flex: 3;
   border: 1px dashed black;
+  padding: 0.5rem;
+  flex: 3;
+  padding: 0em 1em;
+}
+.item-background{
+  flex: 3;
+  background-color: rgb(246, 238, 230);
+  border-radius: 10px;
+  padding: 0em 0.5em;
+
 }
 
-.item-background {
-  background-color: hsl(30, 55%, 85%);
-  border: 3px solid #decebd;
-  border-radius: 25px;
-  min-width: 50%;
-}
+
 /* fordeling horisontalt skjer i individuelle felt, avhenging av layout ()()()SEAN()()() */
 
 /*Navigation bar w/ hamburgermenu*/
@@ -67,7 +67,7 @@ nav {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  background-color: rgb(221, 199, 160);
+  background-color: rgb(221, 199, 160); /*rgb(221, 199, 160)*/
   z-index: 99;
   width: 100%;
   height: 50px;
@@ -107,7 +107,6 @@ nav {
 }
 
 @media screen and (max-width: 768px) {
-  
 
 .menu-button, /*Design of the three white lines that make out the hamburger meny icon*/
 .menu-button::before,
@@ -184,7 +183,7 @@ nav {
 
 article {
   grid-area: article;
-  padding-top: 50px;
+  margin-top: 50px;
 }
 
 
@@ -258,72 +257,84 @@ footer {
 }
 .image-size{
   width: 100%;
-  min-width: 300px;
+  height: auto;
+  min-width: 350px;
 }
-.index-flexitem-a{
-  flex: 2;
-  padding: 0.5em;
-}
-.index-flexitem-b{
-  flex: 1;
-  background-color: hsl(30, 55%, 85%);
-  border-radius: 10px;
-  padding: 0.5em;
-  margin: 0rem 1rem;
-}
-.index-flexitem-c{
+.index-item-picture{
   display: flex;
   align-items: center;
-  flex: 1;
+  flex: 1.5; /*pga item er 3, fjern endere dette da*/
 }
-.font-column{
+#main-title{
+  font-size: 5rem;
+  text-align: center;
+  font-weight: 600;
+}
+.main-container p{
+  font-size: 1.5rem; 
+  font-weight: 400;         /* font alt */
+}
+.main-container li{
+  font-size: 1.5rem; 
+  font-weight: 400; 
+}
+@media (max-width: 1040px){
+  #main-title{
+    font-size: 3.5rem;
+  }
+  .main-container p{
+    font-size: 
+  }
+}
+
+article > p{
+  font-size: 3rem;
+  text-align: center;
+  font-weight: 450;
+}
+
+.main-flexbox > h2 {
   font-size: 1.5rem;
+  text-align: center;
+  font-weight: 550;
 }
-.index-flexitem-b h2{
-  font-size: 2rem;
-}
+
 @media (max-width:768px){
-  .main-flexbox{
+  .main-flexbox-background{
     flex-direction: column;
   }
-  .index-flexitem-b{
+  .main-flexbox{
+    flex-direction: column;         /* DISSE PÅVIRKER ALLE, MÅ SJEKKE OM DET FUNKER FOR ALLE SAMMEN */
+  }
+  .item-background{
     margin: 0.5em 0em;
   }
-  .index-flexitem-a{
-    order: 1;
+  .index-item-picture{
+    order: 2;
   }
-  .index-flexitem-c{
-    order: 3;
+  #main-title{
+    font-size: 3rem;
   }
 
+  @media (max-width: 625px){
+    #main-title{
+      font-size: 2.5rem;
+    }
+  }
 }
-/*
+
   .img-fade {
     position: relative; 
   }
-
   .img-fade:after {
     content:""; 
     position: absolute; 
     bottom: 0;
     left: 0;
     right: 0;
-    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%,rgb(246, 238, 230, 1) 100%);
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%,rgb(255, 255, 255, 1) 100%); /* 246, 238, 230 */
     height: 50%;  
   }
-
-.index-margin-venstre{
-  grid-area: 1 / 2 / 2 / 3;
-}
-.index-margin-høyre{
-  grid-area: 3 / 2 / 4 / 3;
-}
-.index-innhold{
-  grid-area: 2 / 2 / 3 / 3;
-  display: flex;                youtube: https://youtu.be/phWxA89Dy9D
-  flex-direction: column;
-  justify-content: space-around;
-}*/
 
 
 /*accessibillity sin spesifikke style */
@@ -331,23 +342,25 @@ footer {
 /*Topical sin spesifikke style */
 #førstetest{
   width: 100%;
-  height: 250px;
+  height: 300px;
   object-fit: cover;
 }
 .infotekst{
-  background-color: bisque;
+  background-color: hsl(30, 55%, 85%);
   padding: 10px;
   width: 50%;
-  margin-right: 10px;
+  margin-right: 2em;
 }
 .bildekilde{
-  background-color: #e3a4db;
+  background-color: hsl(30, 55%, 85%);
   padding: 5px;
+  text-align: left;
 }
 .galleri{
   margin-right: 2px;
-  background-color: bisque;
-  margin: 0em 2em;
+  background-color: hsl(30, 55%, 85%);
+  margin: 0em 1em;
+  padding: 10px;
 }
 .galleribilde{
   width: 100%;
@@ -365,14 +378,14 @@ footer {
   width: 100%;
   height: auto;
   border: 1px solid #000;
-  margin: 10 px; 
+  margin: 10px; 
 }
-.kantine-bilde3 {
+.main-img-campus-places {
   width: 100%;
+  height: 450px;
   object-fit: cover;
-  border: 1px solid #000;
 }
-.font-size-kantine {
+.campus-fontsize {
   font-size: 1.3rem;
 }
 .font-size-kantine-overskrift {
@@ -390,4 +403,100 @@ footer {
 */
 /*
 - fjerne tall i klassenavn
+*/
+.small-image {
+  display: block;
+  max-width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.medium-image {
+  display: block;
+  max-width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.large-image {
+  display: block;
+  width: auto;
+  height: 600px; 
+  object-fit: cover;
+}
+
+span{
+  color: yellow;
+}
+.capturebox-container {
+width: 100%;
+max-width: 100%;
+display: flex;
+flex-direction: column;
+gap: 2em;
+justify-content: center;
+align-items: center;
+margin: 1em 0em;
+}
+ul.capturebox
+ {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: 60% 40%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+  }
+li.capturebox-content {
+    list-style-type: none;
+    padding: 5rem 1rem;
+    text-align: center;
+    max-width: 100%;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+    gap: 10px;
+    background-color: wheat;
+  }
+
+  .first-row-col1-capturebox {
+    grid-area: 1 / 2 / 2 / 5;
+  }
+  .first-row-col2-capturebox {
+    grid-area: 1 / 5 / 2 / 6;
+  }
+  .second-row-col3-capturebox {
+    grid-area: 2 / 2 / 3 / 3;
+  }
+  .second-row-col4-capturebox {
+    grid-area: 2 / 3 / 3 / 6;
+  }
+
+  /*
+.image-title {
+  position: relative;
+}
+  
+.image-title:hover:after {
+  position: absolute;
+  content: attr(title);
+  display: inline;
+  right: 0px;
+  bottom: 5px;
+  padding: 5px;
+  background-color: black;
+  color: white;
+}
+*/
+
+/*
+h1 : 3
+h2 : 3
+p  : 3
+
+flex verdier
+
 */
