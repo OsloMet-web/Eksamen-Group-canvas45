@@ -12,49 +12,38 @@ body {
   display: grid;                        /*  --------  1fr  ----------       */
   grid-template-columns: 1fr;           /*  "-------- navbar --------" auto */
   grid-template-rows: auto 1fr auto;    /*  "------- article --------" 1fr  */
-  grid-template-areas: 
+  grid-template-areas:                  /*  "------- footer ---------" auto */
   "nav"
   "article"
   "footer";
-}                                       /*  "------- footer ---------" auto */
-.main-container{
-  display: flex;               /* youtube: https://youtu.be/phWxA89Dy94*/
-  flex-direction: column;
-  justify-content: space-around;
-  flex-wrap: nowrap;
-  width: 98%;
+}
+.main-container{   /* youtube: https://youtu.be/phWxA89Dy94*/
+  width: 96%;
   margin: 0 auto;
 }
 .main-flexbox{
   display: flex;
   border: 1px dashed black;
   align-content: space-between;
-  margin: 1em 1em;
-  flex-wrap: nowrap;
+  gap: 1em;
 }
 .main-flexbox-background{
   display: flex;
-  flex-wrap: nowrap;
   align-content: space-between;
-  margin: 1em 1em;
+  margin: 1em 0em;
   border-radius: 10px;
-  overflow: hidden;
   background-color: rgb(246, 238, 230);
 }
 .main-flexbox-column{
   border: 1px dashed black;
   display: flex;
-  flex: 1;
-  flex-wrap: nowrap;
   flex-direction: column;
-  border: 1px dashed black;
+  justify-content: space-between;
 }
-.item{
-  flex: 3;  /* pga Pia sin side, burde fikses */
+.item{ /* pga Pia sin side, burde fikses */
   border: 1px dashed black;
 }
 .item-background{
-  flex: 3;
   background-color: hsl(30, 55%, 85%);
   border-radius: 10px;
 }
@@ -288,6 +277,18 @@ h1{
   text-align: center;
   font-weight: 600;
 }
+article > p{
+  font-size: 3rem;
+  text-align: center;
+  font-weight: 450;
+}
+
+.main-flexbox > h2 {
+  font-size: 1.5rem;
+  text-align: center;
+  font-weight: 450;
+}
+
 @media (max-width:768px){
   .main-flexbox-background{
     flex-direction: column;
@@ -362,12 +363,12 @@ h1{
   border: 1px solid #000;
   margin: 10 px; 
 }
-.kantine-bilde3 {
+.main-img-campus-places {
   width: 100%;
+  height: 450px;
   object-fit: cover;
-  border: 1px solid #000;
 }
-.font-size-kantine {
+.campus-fontsize {
   font-size: 1.3rem;
 }
 
@@ -384,15 +385,42 @@ h1{
 - fjerne tall i klassenavn
 */
 
-.small-picture {
+.small-image {
+  display: block;
   width: auto;
-  height: 250;
+  height: 200px;
+  object-fit: cover;
 }
-.medium-picture {
+.medium-image {
+  display: block;
   width: auto;
-  height: 500;
+  height: 400px; 
+  object-fit: cover;
 }
-.big-picture {
+.large-image {
+  display: block;
   width: auto;
-  height: 750;
+  height: 600px; 
+  object-fit: cover;
 }
+
+span{
+  color: yellow;
+}
+
+/*
+.image-title {
+  position: relative;
+}
+  
+.image-title:hover:after {
+  position: absolute;
+  content: attr(title);
+  display: inline;
+  right: 0px;
+  bottom: 5px;
+  padding: 5px;
+  background-color: black;
+  color: white;
+}
+*/
