@@ -338,7 +338,7 @@ article > p{
 /*accessibillity sin spesifikke style */
 
 /*Topical sin spesifikke style */
-#førstetest{
+.førstetest{
   width: 100%;
   height: 300px;
   object-fit: cover;
@@ -368,6 +368,45 @@ article > p{
 #topical-overskrift{
   text-align: center;
 }
+.slides{
+  height: 70vh;
+  overflow: hidden;
+  position: relative;
+  border-radius: 40px;
+}
+.slide{
+  position: absolute;
+  height: 100%;
+  margin: 15px;
+  opacity: 0;
+  inset: 0;
+  animation: slide-show 12s infinite;
+}
+.slide-2{
+  animation-delay: 6s;
+}
+.slide picture img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+@keyframes slide-show{
+  0%{
+    opacity: 0;
+  }
+  10%{
+    opacity: 1;
+  }
+  20%,
+  30%{
+    opacity: 1;
+    scale: 1.05;
+  }
+  50%{
+    opacity: 0;
+  }
+}
 
 /*Kantina sin spesifikke style */
 .kantine-bilde {
@@ -392,6 +431,7 @@ article > p{
 .font-size-kantine-overskrift {
   font-size: 2rem;
 }
+
 
 /*Bibliotek sin spesifikke style */
 
