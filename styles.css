@@ -33,7 +33,7 @@ body {
   display: flex;
   flex-wrap: nowrap;
   border-radius: 10px;
-  background-color: rgb(216, 196, 182); /*tekstboks*/
+  background-color: rgb(199, 185, 175); /*tekstboks*/
 }
 .main-flexbox-column{
   display: flex;
@@ -330,7 +330,7 @@ article > p{
     bottom: 0;
     left: 0;
     right: 0;
-    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%,rgb(255, 255, 255, 1) 100%); /* 246, 238, 230 */
+    background: linear-gradient(to bottom, rgba(245, 239, 231, 0) 0%,rgb(245, 239, 231, 1) 100%); /* 246, 238, 230 */
     height: 50%;  
   }
 
