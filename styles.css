@@ -18,24 +18,19 @@ body {
   "footer";
 }                                       /*  "------- footer ---------" auto */
 .main-container{
-  display: flex;  
-  flex-wrap: nowrap;             /* youtube: https://youtu.be/phWxA89Dy94*/
-  flex-direction: column;
-  justify-content: space-around;
   width: 98%;
   margin: 0 auto;
 }
 .main-flexbox{
   display: flex;
   flex-wrap: nowrap;
-  align-content: space-between;
   margin: 1em 1em;
-
+  gap: 1em;
   border: 1px dashed black;
 }
 .main-flexbox-background{
   display: flex;
-  align-content: space-between;
+  flex-wrap: nowrap;
   margin: 1em 0em;
   border-radius: 10px;
   background-color: rgb(246, 238, 230);
@@ -45,17 +40,20 @@ body {
   flex-wrap: nowrap;
   flex-direction: column;
   border: 1px dashed black;
+  flex: 2;
 }
 .item{ /* pga Pia sin side, burde fikses */
   border: 1px dashed black;
   padding: 0.5rem;
+  flex: 3;
+  padding: 0em 1em;
 }
 .item-background{
   flex: 3;
   background-color: rgb(246, 238, 230);
   border-radius: 10px;
-  padding: 0.5em;
-  margin: 0rem 1rem;
+  padding: 0em 0.5em;
+
 }
 
 
@@ -488,4 +486,13 @@ li.capturebox-content {
   background-color: black;
   color: white;
 }
+*/
+
+/*
+h1 : 3
+h2 : 3
+p  : 3
+
+flex verdier
+
 */
