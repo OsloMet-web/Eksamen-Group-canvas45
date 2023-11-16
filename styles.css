@@ -6,7 +6,7 @@
 body {
   margin: 0px;
   height: 100vh;
-  background-color: white;/* rgb(246, 238, 230) */
+  background-color: rgb(245, 239, 231);/* rgb(246, 238, 230) */
   font-family: "Gill Sans", sans-serif;
   overflow-x: hidden;
   display: grid;                        /*  --------  1fr  ----------       */
@@ -33,7 +33,7 @@ body {
   display: flex;
   flex-wrap: nowrap;
   border-radius: 10px;
-  background-color: rgb(246, 238, 230);
+  background-color: rgb(216, 196, 182); /*tekstboks*/
 }
 .main-flexbox-column{
   display: flex;
@@ -48,7 +48,7 @@ body {
 }
 .item-background{
   flex: 2;
-  background-color: rgb(246, 238, 230);
+  background-color: rgb(rgb(235, 227, 213)); /*tekstboks*/
   border-radius: 10px;
   padding: 0em 0.5em;
 
@@ -65,7 +65,7 @@ nav {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  background-color: rgb(221, 199, 160); /*rgb(221, 199, 160)*/
+  background-color: rgb(96, 108, 93); /*rgb(221, 199, 160)*/
   z-index: 99;
   width: 100%;
   height: 50px;
@@ -187,7 +187,7 @@ article {
 
 footer {
   grid-area: footer;
-  background-color: rgb(221, 199, 160);
+  background-color: rgb(96, 108, 93);
   font-size: 18px;
   width: 100%;
   color: #4c3d3d;
