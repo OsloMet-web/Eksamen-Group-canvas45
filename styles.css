@@ -365,6 +365,9 @@ article > p{
   object-fit: cover;
   border: solid black 2px;
 }
+#topical-overskrift{
+  text-align: center;
+}
 
 /*Kantina sin spesifikke style */
 .kantine-bilde {
