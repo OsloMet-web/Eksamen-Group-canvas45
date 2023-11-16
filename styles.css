@@ -20,13 +20,17 @@ body {
 .main-container{
   width: 97%;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+
 }
 .main-flexbox{
   display: flex;  /* youtube: https://youtu.be/phWxA89Dy94*/
   flex-wrap: nowrap;
   gap: 1em;
   border: 1px dashed black;
-  margin: 1em;
+  
   justify-content: space-between;  /* space between, fjernet flex */
 }
 .main-flexbox-background{
@@ -37,6 +41,7 @@ body {
 }
 .main-flexbox-column{
   display: flex;
+  flex: 2;
   flex-wrap: nowrap;
   flex-direction: column;
   border: 1px dashed black;
@@ -51,9 +56,10 @@ body {
   background-color: rgb(235, 227, 213); 
   border-radius: 10px;
   padding: 0em 0.5em;
-
 }
-
+.item-b{
+  flex: 4;
+}
 
 /* fordeling horisontalt skjer i individuelle felt, avhenging av layout ()()()SEAN()()() */
 
@@ -104,80 +110,7 @@ nav {
   display: none;
 }
 
-@media screen and (max-width: 768px) {
 
-.menu-button, /*Design of the three white lines that make out the hamburger meny icon*/
-.menu-button::before,
-.menu-button::after {
-  display: block;
-  background-color: #fff;
-  position: absolute;
-  height: 4px;
-  width: 30px;
-  border-radius: 2px;
-}
-
-.menu-button::before {
-  content: '';
-  margin-top: -8px;
-}
-
-.menu-button::after {
-  content: '';
-  margin-top: 8px;
-}
-
-#menu-toggle:checked + .menu-button-container .menu-button::before {
-  margin-top: 0px;
-  transform: rotate(405deg);
-}
-
-#menu-toggle:checked + .menu-button-container .menu-button {
-  background: rgba(255, 255, 255, 0); /*"0" is opacity and its function is tho hide the middle line when activated*/
-}
-
-/*Turns one of the lines -405 degrees */
-#menu-toggle:checked + .menu-button-container .menu-button::after {
-  margin-top: 0px; /*Allows the line to use the whole flexbox*/
-  transform: rotate(-405deg);
-}
-
-  .menu-button-container {
-    display: flex;
-  }
-  .menu {
-    position: absolute;
-    top: 0; 
-    margin-top: 3.1rem;
-    left: 0;
-    flex-direction: column;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  #menu-toggle ~ .menu li {
-    height: 0;
-    margin: 0;
-    padding: 0;
-    border: 0;
-    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
-  }
-  #menu-toggle:checked ~ .menu li {
-    height: 2.5em;
-    padding: 0.5em;
-    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
-  }
-  .menu li {
-    display: flex;
-    justify-content: center;
-    margin: 0;
-    padding: 0.5em 0;
-    width: 100%;
-    color: white;
-    background-color: rgb(238, 224, 201, 0.9);
-  }
-}
 
 article {
   grid-area: article;
@@ -233,35 +166,16 @@ footer {
 .footer-bottom p {
     margin: 0;
 }
-  
-@media screen and (max-width: 768px) { /*When the page is less than 700px, the design changes*/
-    .footer-content {
-        grid-template-columns: repeat(1, 1fr);
-        row-gap: 20px;
-    }
-    .footer-menu{
-        text-align: left;
-    }
-    .footer-menu li {
-      display: block;
-      margin-bottom: 10px;
-    }
-}
 
 
 /*Index sin spesifikke style */   /* bytte divs med section */
 #main-photo{
   width: 100%;
 }
-.image-size{
-  width: 100%;
-  height: auto;
-  min-width: 350px;
-}
 .index-item-picture{
   display: flex;
   align-items: center;
-  flex: 1; /*pga item er 3, fjern endere dette da*/
+  flex: 1;
 }
 #main-title{
   font-size: 5rem;
@@ -270,55 +184,34 @@ footer {
 }
 .main-container p{
   font-size: 1.5rem; 
-  font-weight: 400;         /* font alt */
+  font-weight: 400;        
 }
 .main-container li{
-  font-size: 1.5rem; 
+  font-size: 1.4rem; 
   font-weight: 400; 
 }
-@media (max-width: 1040px){
-  #main-title{
-    font-size: 3.5rem;
-  }
-  .main-container p{
-    font-size: 
-  }
+
+article > h1 {
+  font-size: 5rem;
+  text-align: center;
+  font-weight: 550;
 }
 
+.item > h1 {
+  font-size: 3rem;
+  text-align: center;
+  font-weight: 300;
+}
 article > p{
   font-size: 3rem;
   text-align: center;
   font-weight: 450;
 }
 
-.main-flexbox > h2 {
+h2 {
   font-size: 1.5rem;
   text-align: center;
-  font-weight: 550;
-}
-
-@media (max-width:768px){
-  .main-flexbox-background{
-    flex-direction: column;
-  }
-  .main-flexbox{
-    flex-direction: column;         /* DISSE PÅVIRKER ALLE, MÅ SJEKKE OM DET FUNKER FOR ALLE SAMMEN */
-  }
-  .item-background{
-    margin: 0.5em 0em;
-  }
-  .index-item-picture{
-    order: 2;
-  }
-  #main-title{
-    font-size: 3rem;
-  }
-
-  @media (max-width: 625px){
-    #main-title{
-      font-size: 2.5rem;
-    }
-  }
+  font-weight: 600;
 }
 
   .img-fade {
@@ -333,9 +226,6 @@ article > p{
     background: linear-gradient(to bottom, rgba(245, 239, 231, 0) 0%,rgb(245, 239, 231, 1) 100%);
     height: 50%;  
   }
-
-
-/*accessibillity sin spesifikke style */
 
 /*Topical sin spesifikke style */
 .førstetest{
@@ -354,12 +244,7 @@ article > p{
   padding: 5px;
   text-align: left;
 }
-.galleri{
-  margin-right: 2px;
-  background-color: hsl(30, 55%, 85%);
-  margin: 0em 1em;
-  padding: 10px;
-}
+
 .galleribilde{
   width: 100%;
   object-fit: cover;
@@ -428,42 +313,12 @@ article > p{
 .campus-fontsize {
   font-size: 1.3rem;
 }
-.font-size-kantine-overskrift {
-  font-size: 2rem;
-}
-
-
-/*Bibliotek sin spesifikke style */
-
-/* bli enige om:
-- kode shorthand/longhand, tengel anbefaler long
-- før vi er ferdige ordne CSS struktur  
-- liten bokstav på navn og klasser
-- selvforklarende navn
-- kommentere kode, og kilde om det trengs
-*/
-/*
-- fjerne tall i klassenavn
-*/
-.small-image {
+.image-size {
   display: block;
-  max-width: 100%;
-  height: 100%;
+  width: 100%;
+  height: auto;
   object-fit: cover;
 }
-.medium-image {
-  display: block;
-  max-width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-.large-image {
-  display: block;
-  width: auto;
-  height: 600px; 
-  object-fit: cover;
-}
-
 span{
   color: yellow;
 }
@@ -516,28 +371,120 @@ li.capturebox-content {
     grid-area: 2 / 3 / 3 / 6;
   }
 
-  /*
-.image-title {
-  position: relative;
-}
+  @media (max-width: 1040px){
+    #main-title{
+      font-size: 3.5rem;
+    }
+    ul.capturebox {
+      grid-template-columns: repeat(4,1fr);
+      grid-template-rows:1fr;
+    }
+  }
+          
+@media screen and (max-width: 768px) { /*When the page is less than 700px, the design changes*/
+  .footer-content {
+      grid-template-columns: repeat(1, 1fr);
+      row-gap: 20px;
+  }
+  .footer-menu{
+      text-align: left;
+  }
+  .footer-menu li {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  .menu-button, /*Design of the three white lines that make out the hamburger meny icon*/
+  .menu-button::before,
+  .menu-button::after {
+    display: block;
+    background-color: #fff;
+    position: absolute;
+    height: 4px;
+    width: 30px;
+    border-radius: 2px;
+  }
   
-.image-title:hover:after {
-  position: absolute;
-  content: attr(title);
-  display: inline;
-  right: 0px;
-  bottom: 5px;
-  padding: 5px;
-  background-color: black;
-  color: white;
-}
-*/
-
-/*
-h1 : 3
-h2 : 3
-p  : 3
-
-flex verdier
-
-*/
+  .menu-button::before {
+    content: '';
+    margin-top: -8px;
+  }
+  
+  .menu-button::after {
+    content: '';
+    margin-top: 8px;
+  }
+  
+  #menu-toggle:checked + .menu-button-container .menu-button::before {
+    margin-top: 0px;
+    transform: rotate(405deg);
+  }
+  
+  #menu-toggle:checked + .menu-button-container .menu-button {
+    background: rgba(255, 255, 255, 0); /*"0" is opacity and its function is tho hide the middle line when activated*/
+  }
+  
+  /*Turns one of the lines -405 degrees */
+  #menu-toggle:checked + .menu-button-container .menu-button::after {
+    margin-top: 0px; /*Allows the line to use the whole flexbox*/
+    transform: rotate(-405deg);
+  }
+  
+    .menu-button-container {
+      display: flex;
+    }
+    .menu {
+      position: absolute;
+      top: 0; 
+      margin-top: 3.1rem;
+      left: 0;
+      flex-direction: column;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    #menu-toggle ~ .menu li {
+      height: 0;
+      margin: 0;
+      padding: 0;
+      border: 0;
+      transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    }
+    #menu-toggle:checked ~ .menu li {
+      height: 2.5em;
+      padding: 0.5em;
+      transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    }
+    .menu li {
+      display: flex;
+      justify-content: center;
+      margin: 0;
+      padding: 0.5em 0;
+      width: 100%;
+      color: white;
+      background-color: rgb(238, 224, 201, 0.9);
+    }
+    .main-flexbox-background{
+      flex-direction: column;
+    }
+    .main-flexbox{
+      flex-direction: column;
+    }
+    .item-background{
+      margin: 0.5em 0em;
+    }
+    .index-item-picture{
+      order: 2;
+    }
+    #main-title{
+      font-size: 3rem;
+    }
+  }
+  
+  
+  @media (max-width: 625px){
+    #main-title{
+      font-size: 2.5rem;
+    }
+  }
