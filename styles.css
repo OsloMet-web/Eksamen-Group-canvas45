@@ -384,17 +384,16 @@ article > p{
 /*
 - fjerne tall i klassenavn
 */
-
 .small-image {
   display: block;
-  width: auto;
-  height: 200px;
+  max-width: 100%;
+  height: 100%;
   object-fit: cover;
 }
 .medium-image {
   display: block;
-  width: auto;
-  height: 400px; 
+  max-width: 100%;
+  height: 100%;
   object-fit: cover;
 }
 .large-image {
@@ -407,7 +406,54 @@ article > p{
 span{
   color: yellow;
 }
+.capturebox-container {
+width: 100%;
+max-width: 1920px;
+display: flex;
+flex-direction: column;
+gap: 2em;
+justify-content: center;
+align-items: center;
+margin: 1em 0em;
+}
+ul.capturebox
+ {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: 60% 40%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+  }
+li.capturebox-content {
+    list-style-type: none;
+    padding: 5rem 1rem;
+    text-align: center;
+    max-width: 100%;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+    gap: 10px;
+    background-color: wheat;
+  }
 
+  .first-row-col1-capturebox {
+    grid-area: 1 / 2 / 2 / 5;
+  }
+  .first-row-col2-capturebox {
+    grid-area: 1 / 5 / 2 / 6;
+  }
+  .second-row-col3-capturebox {
+    grid-area: 2 / 2 / 3 / 3;
+  }
+  .second-row-col4-capturebox {
+    grid-area: 2 / 3 / 3 / 6;
+  }
 /*
 .image-title {
   position: relative;
