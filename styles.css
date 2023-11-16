@@ -115,6 +115,7 @@ nav {
 article {
   grid-area: article;
   margin-top: 50px;
+  margin-bottom: 2em;
 }
 
 
