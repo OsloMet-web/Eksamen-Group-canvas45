@@ -8,6 +8,7 @@ body {
   height: 100vh;
   background-color: rgb(245, 239, 231);
   font-family: "Gill Sans", sans-serif;
+  font-display: swap;
   overflow-x: hidden;
   display: grid;                        /*  --------  1fr  ----------       */
   grid-template-columns: 1fr;           /*  "-------- navbar --------" auto */
