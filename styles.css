@@ -18,19 +18,20 @@ body {
   "footer";
 }                                       /*  "------- footer ---------" auto */
 .main-container{
-  display: flex;               /* youtube: https://youtu.be/phWxA89Dy94*/
+  display: flex;  
+  flex-wrap: nowrap;             /* youtube: https://youtu.be/phWxA89Dy94*/
   flex-direction: column;
   justify-content: space-around;
-  flex-wrap: nowrap;
   width: 98%;
   margin: 0 auto;
 }
 .main-flexbox{
   display: flex;
-  border: 1px dashed black;
+  flex-wrap: nowrap;
   align-content: space-between;
   margin: 1em 1em;
-  flex-wrap: nowrap;
+
+  border: 1px dashed black;
 }
 .main-flexbox-background{
   display: flex;
@@ -42,22 +43,26 @@ body {
   background-color: rgb(246, 238, 230);
 }
 .main-flexbox-column{
-  border: 1px dashed black;
   display: flex;
-  flex: 1;
   flex-wrap: nowrap;
   flex-direction: column;
+  flex: 1;    /*   PIA sin side må fikses bedre, så vi slipper fleks 3 */
+
   border: 1px dashed black;
 }
 .item{
   flex: 3;  /* pga Pia sin side, burde fikses */
   border: 1px dashed black;
+  padding: 0.5rem;
 }
 .item-background{
   flex: 3;
-  background-color: hsl(30, 55%, 85%);
+  background-color: rgb(246, 238, 230);
   border-radius: 10px;
+  padding: 0.5em;
+  margin: 0rem 1rem;
 }
+
 
 /* fordeling horisontalt skjer i individuelle felt, avhenging av layout ()()()SEAN()()() */
 
@@ -259,55 +264,63 @@ footer {
 }
 .image-size{
   width: 100%;
-  min-width: 300px;
+  height: auto;
+  min-width: 350px;
 }
-.index-flexitem-a{
-  flex: 2;
-  padding: 0.5em;
-}
-.index-flexitem-b{
-  flex: 1;
-  background-color: rgb(246, 238, 230);
-  border-radius: 10px;
-  padding: 0.5em;
-  margin: 0rem 1rem;
-}
-.index-flexitem-c{
+.index-item-picture{
   display: flex;
   align-items: center;
-  flex: 1;
+  flex: 1.5; /*pga item er 3, fjern endere dette da*/
 }
-.font-column{
-  font-size: 1.5rem;
-}
-.index-flexitem-b h2{
-  font-size: 1.5rem;
-}
-h1{
+#main-title{
   font-size: 5rem;
   text-align: center;
   font-weight: 600;
 }
+.main-container p{
+  font-size: 1.5rem; 
+  font-weight: 400;         /* font alt */
+}
+.main-container li{
+  font-size: 1.5rem; 
+  font-weight: 400; 
+}
+@media (max-width: 1040px){
+  #main-title{
+    font-size: 3.5rem;
+  }
+  .main-container p{
+    font-size: 
+  }
+}
+
 @media (max-width:768px){
   .main-flexbox-background{
     flex-direction: column;
   }
-  .index-flexitem-b{
+  .main-flexbox{
+    flex-direction: column;         /* DISSE PÅVIRKER ALLE, MÅ SJEKKE OM DET FUNKER FOR ALLE SAMMEN */
+  }
+  .item-background{
     margin: 0.5em 0em;
   }
-  .index-flexitem-a{
-    order: 1;
+  .index-item-picture{
+    order: 2;
   }
-  .index-flexitem-c{
-    order: 3;
+  #main-title{
+    font-size: 3rem;
   }
 
+  @media (max-width: 625px){
+    #main-title{
+      font-size: 2.5rem;
+    }
+  }
 }
 
   .img-fade {
     position: relative; 
   }
-
   .img-fade:after {
     content:""; 
     position: absolute; 
