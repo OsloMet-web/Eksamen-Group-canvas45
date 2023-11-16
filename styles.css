@@ -190,7 +190,7 @@ footer {
   background-color: rgb(96, 108, 93);
   font-size: 18px;
   width: 100%;
-  color: #4c3d3d;
+  color: #f7ecec;
   padding: 30px 0px;
 }
 .footer-container {
@@ -221,7 +221,7 @@ footer {
 }
   
 .footer-menu a {
-    color: #4c3d3d;
+    color: #f5eaea;
     text-decoration: none;
 }
   
