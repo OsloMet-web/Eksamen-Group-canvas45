@@ -12,7 +12,7 @@ body {
   display: grid;                        /*  --------  1fr  ----------       */
   grid-template-columns: 1fr;           /*  "-------- navbar --------" auto */
   grid-template-rows: auto 1fr auto;    /*  "------- article --------" 1fr  */
-  grid-template-areas: 
+  grid-template-areas:                  /*  "------- footer ---------" auto */
   "nav"
   "article"
   "footer";
@@ -35,23 +35,18 @@ body {
 }
 .main-flexbox-background{
   display: flex;
-  flex-wrap: nowrap;
   align-content: space-between;
-  margin: 1em 1em;
+  margin: 1em 0em;
   border-radius: 10px;
-  overflow: hidden;
   background-color: rgb(246, 238, 230);
 }
 .main-flexbox-column{
   display: flex;
   flex-wrap: nowrap;
   flex-direction: column;
-  flex: 1;    /*   PIA sin side må fikses bedre, så vi slipper fleks 3 */
-
   border: 1px dashed black;
 }
-.item{
-  flex: 3;  /* pga Pia sin side, burde fikses */
+.item{ /* pga Pia sin side, burde fikses */
   border: 1px dashed black;
   padding: 0.5rem;
 }
@@ -294,6 +289,18 @@ footer {
   }
 }
 
+article > p{
+  font-size: 3rem;
+  text-align: center;
+  font-weight: 450;
+}
+
+.main-flexbox > h2 {
+  font-size: 1.5rem;
+  text-align: center;
+  font-weight: 550;
+}
+
 @media (max-width:768px){
   .main-flexbox-background{
     flex-direction: column;
@@ -375,12 +382,12 @@ footer {
   border: 1px solid #000;
   margin: 10 px; 
 }
-.kantine-bilde3 {
+.main-img-campus-places {
   width: 100%;
+  height: 450px;
   object-fit: cover;
-  border: 1px solid #000;
 }
-.font-size-kantine {
+.campus-fontsize {
   font-size: 1.3rem;
 }
 
@@ -396,16 +403,89 @@ footer {
 /*
 - fjerne tall i klassenavn
 */
+.small-image {
+  display: block;
+  max-width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.medium-image {
+  display: block;
+  max-width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.large-image {
+  display: block;
+  width: auto;
+  height: 600px; 
+  object-fit: cover;
+}
 
-.small-picture {
-  width: auto;
-  height: 250;
+span{
+  color: yellow;
 }
-.medium-picture {
-  width: auto;
-  height: 500;
+.capturebox-container {
+width: 100%;
+max-width: 1920px;
+display: flex;
+flex-direction: column;
+gap: 2em;
+justify-content: center;
+align-items: center;
+margin: 1em 0em;
 }
-.big-picture {
-  width: auto;
-  height: 750;
+ul.capturebox
+ {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: 60% 40%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+  }
+li.capturebox-content {
+    list-style-type: none;
+    padding: 5rem 1rem;
+    text-align: center;
+    max-width: 100%;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+    gap: 10px;
+    background-color: wheat;
+  }
+
+  .first-row-col1-capturebox {
+    grid-area: 1 / 2 / 2 / 5;
+  }
+  .first-row-col2-capturebox {
+    grid-area: 1 / 5 / 2 / 6;
+  }
+  .second-row-col3-capturebox {
+    grid-area: 2 / 2 / 3 / 3;
+  }
+  .second-row-col4-capturebox {
+    grid-area: 2 / 3 / 3 / 6;
+  }
+/*
+.image-title {
+  position: relative;
 }
+  
+.image-title:hover:after {
+  position: absolute;
+  content: attr(title);
+  display: inline;
+  right: 0px;
+  bottom: 5px;
+  padding: 5px;
+  background-color: black;
+  color: white;
+}
+*/
