@@ -32,8 +32,8 @@ body {
 .main-flexbox-background{
   display: flex;
   flex-wrap: nowrap;
-  border-radius: 10px;
-  background-color: rgb(199, 185, 175); /*tekstboks*/
+  border-radius: 20px;
+  background-color: rgb(216, 196, 182); /*tekstboks*/
 }
 .main-flexbox-column{
   display: flex;
