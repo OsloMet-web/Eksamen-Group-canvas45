@@ -25,6 +25,7 @@ body {
   display: flex;
   border: 1px dashed black;
   align-content: space-between;
+  justify-content: center;
   gap: 1em;
 }
 .main-flexbox-background{
@@ -286,7 +287,7 @@ article > p{
 .main-flexbox > h2 {
   font-size: 1.5rem;
   text-align: center;
-  font-weight: 450;
+  font-weight: 550;
 }
 
 @media (max-width:768px){
