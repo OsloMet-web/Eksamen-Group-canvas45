@@ -10,11 +10,14 @@
   </head>
   <body>
 
+    <!-- Navigation bar, containing menu-->
       <nav>
         <div>
-        <p style="color: #c1ff72;">//LOGO//</p> <!-- fjern mot logo -->
+          <picture>
+            <img src="Bilder/Logo" class="logo"> 
+          </picture>
         </div>
-        <input id="menu-toggle" type="checkbox" />
+        <input id="menu-toggle" type="checkbox"/>
         <label class='menu-button-container' for="menu-toggle">
         <div class='menu-button'></div>
       </label>
@@ -29,17 +32,17 @@
 
 
     <article>
-      
+      <!-- Main picture -->
         <picture title="BENJAMIN A.WARD">
           <div class="img-fade">
-          <img src="Bilder/OsloMet-fasade.jpg" id="main-photo" alt="Bilde av OsloMet sin logo">
-          <!-- BENJAMIN A.WARD -->
+          <img src="Bilder/OsloMet-fasade.jpg" id="main-photo" alt="Bilde av OsloMet sin logo"> 
         </div>
         </picture>
-       
+
+       <!-- Main content -->
         <section class="main-container">
           <h1 id="main-title">OsloMet: En Innovativ Bro til Menneskehetens Fremtid</h1>
-
+          <!-- Første rad med tekst og et bilde, mørk bakgrunn First row, containing text and picture, with dark background-->
             <section class="main-flexbox-background">
 
                 <div class="item">
@@ -50,15 +53,16 @@
                       en viktig rolle i å forme menneskehetens fremtid, spesielt når det gjelder å møte utfordringene og mulighetene som 
                       ligger foran oss.</p></div>
               
-                <div class="index-item-picture">
-                    <picture class="image-size" >
-                        <img src="Bilder/StudenterPark.jpg" class="image-size" alt="Studenter som sitter i en park med pc´er">
+                <div class="item-picture">
+                    <picture>
+                        <img src="Bilder/StudenterPark.jpg" class="image-size" alt="Studenter som sitter i en park med pc´er"><!-- Top right picture-->
                         <figcaption>Av: naassomz1 / pixabay.com</figcaption>
                       </picture>
                 </div>
             </section>
+            <!-- Second row (non-coloured), containing three columns with light coloured items -->
             <section class="main-flexbox">
-                    <div class="item-background">
+                    <div class="item-background">  <!-- first column -->
                         <h2>Velkommen til oss</h2>
                 <ul>
                  <li>OsloMet er landets tredje største universitet, med ca. 22.000 studenter og 2100 ansatte.</li>
@@ -68,7 +72,7 @@
                  <li>Her finner du DIN fremtid.</li>
                 </ul>
                     </div>
-                    <div class="item-background">
+                    <div class="item-background"> <!-- second column -->
                       <h2>Jobbmuligheter</h2>
                 <p>
                   <ul>
@@ -81,7 +85,7 @@
                   
                   </p>
                     </div>
-                    <div class="item-background">
+                    <div class="item-background"><!-- third column-->
                       <h2>Kom til Oslo</h2>
                 <ul>
                  <li>Oslo er hovedstaden i Norge.</li>
@@ -91,9 +95,10 @@
                  <li>Byen har et omfattende kollektivtransportsystem, inkludert busser, trikker og et metronettverk.</li>
                     </div>
             </section>
+            <!-- Third row, with a picture and a text section -->
             <section class="main-flexbox-background">
 
-                <div class="index-item-picture">
+                <div class="item-picture"><!-- bottom left picture-->
                     <picture>
                         <img src="Bilder/HiO-Fasade.jpg" class="image-size" alt="Høyskolen i Oslo">
                         <figcaption>Av: naassomz1 / pixabay.com</figcaption>
