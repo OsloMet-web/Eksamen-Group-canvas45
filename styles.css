@@ -384,7 +384,6 @@ li.capturebox-content {
     }
     
   }
-          
 @media screen and (max-width: 768px) { /*When the page is less than 700px, the design changes*/
   .footer-content {
       grid-template-columns: repeat(1, 1fr);
@@ -397,8 +396,7 @@ li.capturebox-content {
     display: block;
     margin-bottom: 10px;
   }
-
-  .menu-button, /*Design of the three white lines that visualize the hamburger menu icon*/
+  .menu-button, /*Design of the three white lines that make out the hamburger meny icon*/
   .menu-button::before,
   .menu-button::after {
     background-color: #fff;
