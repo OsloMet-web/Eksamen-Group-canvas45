@@ -361,11 +361,8 @@ li.capturebox-content {
     flex-direction: column;
     gap: 10px;
     justify-content: center;
-    list-style-type: none;
-    max-width: 100%;
     overflow: hidden;
-    padding: 5rem 1rem;
-    text-align: center;
+    background-color: bisque;
   }
 
   .first-row-col1-capturebox {
@@ -401,7 +398,7 @@ li.capturebox-content {
     margin-bottom: 10px;
   }
 
-  .menu-button, /*Design of the three white lines that make out the hamburger meny icon*/
+  .menu-button, /*Design of the three white lines that visualize the hamburger menu icon*/
   .menu-button::before,
   .menu-button::after {
     background-color: #fff;
