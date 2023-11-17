@@ -4,47 +4,45 @@
   box-sizing: border-box;
 }
 body {
-  margin: 0px;
-  height: 100vh;
   background-color: rgb(245, 239, 231);
-  font-family: "Gill Sans", sans-serif;
-  overflow-x: hidden;
   display: grid;                        /*  --------  1fr  ----------       */
+  font-family: "Gill Sans", sans-serif;
   grid-template-columns: 1fr;           /*  "-------- navbar --------" auto */
   grid-template-rows: auto 1fr auto;    /*  "------- article --------" 1fr  */
   grid-template-areas:                  /*  "------- footer ---------" auto */
   "nav"
   "article"
   "footer";
+  height: 100vh;
+  margin: 0px;
+  overflow-x: hidden;
 }                                       /*  "------- footer ---------" auto */
 .main-container{
-  width: 97%;
-  margin: 0 auto;
   display: flex;
   flex-direction: column;
   gap: 1em;
-
+  margin: 0 auto;
+  width: 97%;
 }
 .main-flexbox{
+  border: 1px dashed black;
   display: flex;  /* youtube: https://youtu.be/phWxA89Dy94*/
   flex-wrap: nowrap;
   gap: 1em;
-  border: 1px dashed black;
-  
   justify-content: space-between;  /* space between, fjernet flex */
 }
 .main-flexbox-background{
+  background-color: rgb(216, 196, 182); 
+  border-radius: 20px;
   display: flex;
   flex-wrap: nowrap;
-  border-radius: 20px;
-  background-color: rgb(216, 196, 182); 
 }
 .main-flexbox-column{
-  display: flex;
-  flex: 2;
-  flex-wrap: nowrap;
-  flex-direction: column;
   border: 1px dashed black;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  flex: 2;
 }
 .item{
   border: 1px dashed black;
@@ -52,9 +50,9 @@ body {
   padding: 0em 1em;
 }
 .item-background{
-  flex: 2;
   background-color: rgb(235, 227, 213); 
   border-radius: 10px;
+  flex: 2;
   padding: 0em 0.5em;
 }
 .item-b{
@@ -65,17 +63,17 @@ body {
 
 /*Navigation bar w/ hamburgermenu*/
 nav {
-  grid-area: nav;
-  display: flex;
-  position: fixed;
-  flex-direction: row;
   align-items: center;
-  justify-content: space-between;
   background-color: rgb(96, 108, 93); 
-  z-index: 99;
-  width: 100%;
+  display: flex;
+  flex-direction: row;
+  grid-area: nav;
   height: 50px;
+  justify-content: space-between;
   padding: 1em;
+  position: fixed;
+  width: 100%;
+  z-index: 99;
 }
 .menu {
   display: flex;
@@ -84,7 +82,6 @@ nav {
   margin: 0;
   padding: 0;
 }
-
 .menu li { /*Space between links*/
   margin: 0 1rem;
   overflow: hidden; /*Hides the links when container is collapsed*/
@@ -94,16 +91,14 @@ nav {
   color: #fff0f0;
   text-decoration: none;
 }
-
-
 .menu-button-container { /*Hotfixes to make the hyperlinks look nice*/
-  display: none;
-  height: 100%;
-  width: 30px;
-  cursor: pointer;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
+  cursor: pointer;
+  display: none;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  width: 30px;
 }
 
 #menu-toggle { /*Hides the checkbox*/
@@ -112,23 +107,23 @@ nav {
 
 article {
   grid-area: article;
-  margin-top: 50px;
   margin-bottom: 2em;
+  margin-top: 50px;
 }
 
 
 footer {
-  grid-area: footer;
   background-color: rgb(96, 108, 93);
-  font-size: 18px;
-  width: 100%;
   color: #f7ecec;
+  font-size: 18px;
+  grid-area: footer;
   padding: 30px 0px;
+  width: 100%;
 }
 .footer-container {
-    width: 100%;
     margin: 0 auto;
     padding: 0 50px;
+    width: 100%;
 }
 
 .footer-content {
@@ -138,8 +133,8 @@ footer {
 
   
 .footer-menu {
-    padding: 0;
     margin: 0;
+    padding: 0;
     text-align: center;
 }
   
@@ -172,14 +167,14 @@ footer {
   width: 100%;
 }
 .index-item-picture{
-  display: flex;
   align-items: center;
+  display: flex;
   flex: 1;
 }
 #main-title{
   font-size: 5rem;
-  text-align: center;
   font-weight: 600;
+  text-align: center;
 }
 .main-container p{
   font-size: 1.5rem; 
@@ -192,25 +187,35 @@ footer {
 
 article > h1 {
   font-size: 5rem;
-  text-align: center;
   font-weight: 550;
+  text-align: center;
 }
 
 .item > h1 {
   font-size: 3rem;
-  text-align: center;
   font-weight: 300;
+  text-align: center;
 }
 article > p{
   font-size: 3rem;
-  text-align: center;
   font-weight: 450;
+  text-align: center;
 }
 
 h2 {
   font-size: 1.5rem;
-  text-align: center;
   font-weight: 600;
+  text-align: center;
+}
+
+ul.capturebox > li{
+  font-weight: 100;
+}
+
+li.capturebox-content > h2 {
+  font-size: 2rem;
+  font-weight: 900;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
 }
 
 ul.capturebox > li{
@@ -227,26 +232,19 @@ li.capturebox-content > h2 {
     position: relative; 
   }
   .img-fade:after {
-    content:""; 
-    position: absolute; 
-    bottom: 0;
-    left: 0;
-    right: 0;
     background: linear-gradient(to bottom, rgba(245, 239, 231, 0) 0%,rgb(245, 239, 231, 1) 100%);
+    bottom: 0;
+    content:""; 
     height: 50%;  
+    left: 0;
+    position: absolute; 
+    right: 0;
   }
-
-/*Topical sin spesifikke style */
-.førstetest{
-  width: 100%;
-  height: 300px;
-  object-fit: cover;
-}
 .infotekst{
   background-color: hsl(30, 55%, 85%);
+  margin-right: 2em;
   padding: 10px;
   width: 50%;
-  margin-right: 2em;
 }
 .bildekilde{
   background-color: hsl(30, 55%, 85%);
@@ -255,36 +253,36 @@ li.capturebox-content > h2 {
 }
 
 .galleribilde{
-  width: 100%;
+  border: solid black 2px;
   height: 50vmin;
   object-fit: cover;
-  border: solid black 2px;
+  width: 100%;
 }
 #topical-overskrift{
   text-align: center;
 }
 .slides{
+  border-radius: 40px;
   height: 70vh;
   overflow: hidden;
   position: relative;
-  border-radius: 40px;
 }
 .slide{
-  position: absolute;
+  animation: slide-show 12s infinite;
   height: 100%;
+  inset: 0;
   margin: 15px;
   opacity: 0;
-  inset: 0;
-  animation: slide-show 12s infinite;
+  position: absolute;
 }
 .slide-2{
   animation-delay: 6s;
 }
 .slide picture img{
-  width: 100%;
   height: 100%;
   object-fit: cover;
   object-position: center;
+  width: 100%;
 }
 @keyframes slide-show{
   0%{
@@ -305,52 +303,52 @@ li.capturebox-content > h2 {
 
 /*Kantina sin spesifikke style */
 .kantine-bilde {
-  width: 100%; 
-  height: auto;
   border: 1px solid #000;
+  height: auto;
+  width: 100%; 
 }
 .kantine-bilde2 {
-  width: 100%;
-  height: auto;
   border: 1px solid #000;
+  height: auto;
   margin: 10px; 
+  width: 100%;
 }
 .main-img-campus-places {
-  width: 100%;
   height: 450px;
   object-fit: cover;
+  width: 100%;
 }
 .campus-fontsize {
   font-size: 1.3rem;
 }
 .image-size {
   display: block;
-  width: 100%;
   height: auto;
   object-fit: cover;
+  width: 100%;
 }
 span{
   color: yellow;
 }
 .capturebox-container {
-width: 100%;
-max-width: 100%;
+align-items: center;
 display: flex;
 flex-direction: column;
 gap: 2em;
 justify-content: center;
-align-items: center;
 margin: 1em 0em;
+max-width: 100%;
+width: 100%;
 }
 ul.capturebox
  {
+    box-sizing: border-box;
     display: grid;
     grid-gap: 1em;
     grid-template-columns: repeat(6,1fr);
     grid-template-rows: 60% 40%;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
     width: 100%;
   }
 li.capturebox-content {
@@ -360,12 +358,14 @@ li.capturebox-content {
     max-width: 100%;
     border-radius: 10px;
     display: flex;
-    align-items: center;
-    justify-content: center;
     flex-direction: column;
-    overflow: hidden;
     gap: 10px;
-    background-color: wheat;
+    justify-content: center;
+    list-style-type: none;
+    max-width: 100%;
+    overflow: hidden;
+    padding: 5rem 1rem;
+    text-align: center;
   }
 
   .first-row-col1-capturebox {
@@ -404,12 +404,12 @@ li.capturebox-content {
   .menu-button, /*Design of the three white lines that make out the hamburger meny icon*/
   .menu-button::before,
   .menu-button::after {
-    display: block;
     background-color: #fff;
-    position: absolute;
-    height: 4px;
-    width: 30px;
     border-radius: 2px;
+    display: block;
+    height: 4px;
+    position: absolute;
+    width: 30px;
   }
   
   .menu-button::before {
@@ -441,21 +441,21 @@ li.capturebox-content {
       display: flex;
     }
     .menu {
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+      left: 0;
+      margin-top: 3.1rem;
       position: absolute;
       top: 0; 
-      margin-top: 3.1rem;
-      left: 0;
-      flex-direction: column;
       width: 100%;
-      justify-content: center;
-      align-items: center;
     }
     
     #menu-toggle ~ .menu li {
+      border: 0;
       height: 0;
       margin: 0;
       padding: 0;
-      border: 0;
       transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
     }
     #menu-toggle:checked ~ .menu li {
@@ -464,13 +464,13 @@ li.capturebox-content {
       transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
     }
     .menu li {
+      background-color: rgb(238, 224, 201, 0.9);
+      color: white;
       display: flex;
       justify-content: center;
       margin: 0;
       padding: 0.5em 0;
       width: 100%;
-      color: white;
-      background-color: rgb(238, 224, 201, 0.9);
     }
     .main-flexbox-background{
       flex-direction: column;
