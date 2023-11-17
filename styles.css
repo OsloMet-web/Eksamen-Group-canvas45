@@ -319,8 +319,8 @@ li.capturebox-content > h2 {
   object-fit: cover;
   width: 100%;
 }
-span {
-  color: yellow;
+span.oslomet{
+  color: rgb(255, 220, 0);
 }
 .capturebox-container {
   align-items: center;
