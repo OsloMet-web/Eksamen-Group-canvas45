@@ -25,7 +25,6 @@ body {
   width: 97%;
 }
 .main-flexbox{
-  border: 1px dashed black;
   display: flex;  /* youtube: https://youtu.be/phWxA89Dy94*/
   flex-wrap: nowrap;
   gap: 1em;
@@ -38,14 +37,12 @@ body {
   flex-wrap: nowrap;
 }
 .main-flexbox-column{
-  border: 1px dashed black;
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
   flex: 2;
 }
 .item{
-  border: 1px dashed black;
   flex: 2;
   padding: 0em 1em;
 }
@@ -252,15 +249,6 @@ li.capturebox-content > h2 {
   text-align: left;
 }
 
-.galleribilde{
-  border: solid black 2px;
-  height: 50vmin;
-  object-fit: cover;
-  width: 100%;
-}
-#topical-overskrift{
-  text-align: center;
-}
 .slides{
   border-radius: 40px;
   height: 70vh;
