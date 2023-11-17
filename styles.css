@@ -309,6 +309,13 @@ li.capturebox-content > h2 {
   object-fit: cover;
   width: 100%;
 }
+.topical-image-size{
+  display: block;
+  height: 50vh;
+  object-fit: cover;
+  object-position: top;
+  width: 100%;
+}
 .logo-raw{
   
 }
