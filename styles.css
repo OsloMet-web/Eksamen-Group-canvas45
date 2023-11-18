@@ -369,23 +369,29 @@ li.capturebox-content {
   flex-direction: column;
   justify-content: center;
   overflow: hidden;
-  background-color: bisque;
+}
+
+.capturebox-primary-color {
+  background-color: rgb(216, 196, 182);
+}
+.capturebox-secondary-color {
+  background-color: rgb(235, 227, 213);
 }
 
 .first-row-col1-capturebox {
-  grid-area: 1 / 1 / 2 / 5;
+  grid-area: 1 / 2 / 2 / 5;
 }
 
 .first-row-col2-capturebox {
-  grid-area: 1 / 5 / 2 / 7;
+  grid-area: 1 / 5 / 2 / 6;
 }
 
 .second-row-col1-capturebox {
-  grid-area: 2 / 1 / 3 / 3;
+  grid-area: 2 / 2 / 3 / 3;
 }
 
 .second-row-col2-capturebox {
-  grid-area: 2 / 3 / 3 / 7;
+  grid-area: 2 / 3 / 3 / 6;
 }
 
 @media (max-width: 1040px) {
@@ -511,8 +517,24 @@ li.capturebox-content {
 
   #main-title {
     font-size: 3rem;
+
   }
-}
+  .first-row-col1-capturebox {
+    grid-area: 1 / 1 / 2 / 5;
+  }
+  
+  .first-row-col2-capturebox {
+    grid-area: 1 / 5 / 2 / 7;
+  }
+  
+  .second-row-col1-capturebox {
+    grid-area: 2 / 1 / 3 / 3;
+  }
+  
+  .second-row-col2-capturebox {
+    grid-area: 2 / 3 / 3 / 7;
+  }
+  }
 
 @media (max-width: 625px) {
   #main-title {
@@ -532,11 +554,11 @@ li.capturebox-content {
     grid-area: auto;
   }
 
-  .second-row-col3-capturebox {
+  .second-row-col1-capturebox {
     grid-area: auto;
   }
 
-  .second-row-col4-capturebox {
+  .second-row-col2-capturebox {
     grid-area: auto;
   }
 }
