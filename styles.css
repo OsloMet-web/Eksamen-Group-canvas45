@@ -380,11 +380,11 @@ li.capturebox-content {
   grid-area: 1 / 5 / 2 / 7;
 }
 
-.second-row-col3-capturebox {
+.second-row-col1-capturebox {
   grid-area: 2 / 1 / 3 / 3;
 }
 
-.second-row-col4-capturebox {
+.second-row-col2-capturebox {
   grid-area: 2 / 3 / 3 / 7;
 }
 
