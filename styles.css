@@ -11,10 +11,10 @@ body {
   grid-template-columns: 1fr;            /*  --------  1fr  ----------       */
   grid-template-rows: auto 1fr auto;     /*  "-------- navbar --------" auto */
   grid-template-areas:                   /*  "------- article --------" 1fr  */
-    "nav"                                /*  "------- footer ---------" auto */
+    "nav"                                /*  "------- footer ---------" 15em*/
     "article"
     "footer";
-  height: 100vh;
+  height: 100dvh;
   margin: 0px;
   overflow-x: hidden;
   line-height: 1.5;
@@ -137,29 +137,35 @@ footer {
 }
 
 .footer-container {
-  margin: 0 auto;
+  margin: 0px auto;
   padding: 0 50px;
-  width: 100%;
+  max-width: 100%;
+  
 }
 
 .footer-content {
   display: grid;
   grid-template-columns: auto 1fr;
+  
 }
 
 .footer-menu {
+  display: flex;
   margin: 0;
   padding: 0;
-  text-align: center;
+  list-style-type: none;
+  height: 9em;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-self: start;
 }
 
 .footer-menu li {
-  display: inline-block;
-  margin-right: 20px;
-}
-
-.footer-menu li:last-child {
-  margin-right: 0;
+  display: inline-flex;
+  border: 1px dashed black;
+  margin-left: 2em;
+  margin-bottom: 0.2em;
+  font-size: 0.9em;
 }
 
 .footer-menu a {
@@ -168,16 +174,11 @@ footer {
 }
 
 .footer-bottom {
-  margin-top: 20px;
+  margin-top: 1em;
   text-align: center;
+  
 }
 
-.footer-bottom p {
-  margin: 0;
-}
-
-/*Index sin spesifikke style */
-/* bytte divs med section */
 #main-photo {
   width: 100%;
 }
@@ -401,22 +402,6 @@ li.capturebox-content {
 }
 
 @media screen and (max-width: 768px) {
-
-  /*When the page is less than 700px, the design changes*/
-  .footer-content {
-    grid-template-columns: repeat(1, 1fr);
-    row-gap: 20px;
-  }
-
-  .footer-menu {
-    text-align: left;
-  }
-
-  .footer-menu li {
-    display: block;
-    margin-bottom: 10px;
-  }
-
   .menu-button,
   /*Design of the three white lines that make out the hamburger meny icon*/
   .menu-button::before,
@@ -562,3 +547,28 @@ li.capturebox-content {
     grid-area: auto;
   }
 }
+/*
+.image-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.image-container img {
+  max-width: 100%;
+  max-height: 100%;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+.image-container img:fullscreen {
+  transform: scale(1.5); /* You can adjust the scaling factor as needed 
+}
+
+/* Hide the browser's default anchor link styling 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+*/
