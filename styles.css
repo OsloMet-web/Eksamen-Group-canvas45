@@ -8,10 +8,10 @@ body {
   background-color: rgb(245, 239, 231);
   display: grid;
   font-family: "Gill Sans", sans-serif;
-  grid-template-columns: 1fr;            /*  --------  1fr  ----------       */
-  grid-template-rows: auto 1fr auto;     /*  "-------- navbar --------" auto */
-  grid-template-areas:                   /*  "------- article --------" 1fr  */
-    "nav"                                /*  "------- footer ---------" 15em*/
+  grid-template-columns: 1fr;            /*  --------  1fr  ----------      */
+  grid-template-rows: auto 1fr auto;     /*  "------- header --------" auto */
+  grid-template-areas:                   /*  "------- article --------" 1fr */
+    "header"                             /*  "------- footer ---------" 15em*/
     "article"
     "footer";
   height: 100dvh;
@@ -20,7 +20,14 @@ body {
   line-height: 1.5;
 }
 
-/*  "------- footer ---------" auto */
+:root { /*Changes the color of the entire website*/
+  --primary-color: rgb(216, 196, 182);
+  --secondary-color: rgb(235, 227, 213);
+  --support-color: rgb(96, 108, 93);
+  --text-white: rgb(255,240,240);
+  --background-color: rgb(245, 239, 231);
+}
+
 .main-container {
   display: flex;
   flex-direction: column;
@@ -38,7 +45,7 @@ body {
 }
 
 .main-flexbox-background {
-  background-color: rgb(216, 196, 182);
+  background-color: var(--primary-color);
   border-radius: 20px;
   display: flex;
   flex-wrap: nowrap;
@@ -58,7 +65,7 @@ body {
 }
 
 .item-background {
-  background-color: rgb(235, 227, 213);
+  background-color: var(--secondary-color);
   border-radius: 10px;
   flex: 2;
   padding: 0em 0.5em;
@@ -70,13 +77,13 @@ body {
 
 /* fordeling horisontalt skjer i individuelle felt, avhenging av layout ()()()SEAN()()() */
 
-/*Navigation bar w/ hamburgermenu*/
-nav {
+/*Headerbar w/ hamburgermenu*/
+header {
   align-items: center;
-  background-color: rgb(96, 108, 93);
+  background-color: var(--support-color);
   display: flex;
   flex-direction: row;
-  grid-area: nav;
+  grid-area: header;
   height: 50px;
   justify-content: space-between;
   padding: 1em;
@@ -101,7 +108,7 @@ nav {
 }
 
 .menu a {
-  color: #fff0f0;
+  color: var(--text-white);
   text-decoration: none;
 }
 
@@ -128,8 +135,8 @@ article {
 }
 
 footer {
-  background-color: rgb(96, 108, 93);
-  color: #f7ecec;
+  background-color: var(--support-color);
+  color: var(--text-white);
   font-size: 18px;
   grid-area: footer;
   padding: 30px 0px;
@@ -161,22 +168,28 @@ footer {
 }
 
 .footer-menu li {
-  display: inline;
-  border: 1px dashed black;
   margin-left: 2em;
   margin-bottom: 0.2em;
   font-size: 0.9em;
 }
 
 .footer-menu a {
-  color: #f5eaea;
+  color: var(--text-white);
   text-decoration: none;
 }
 
 .footer-bottom {
   margin-top: 1em;
   text-align: center;
+  color: var(--text-white) ;
   
+}
+
+header a:hover,
+header a:focus,
+footer a:hover,
+footer a:focus {
+  color: rgb(100, 89, 255)
 }
 
 #main-photo {
@@ -235,9 +248,7 @@ h2 {
 }
 
 .img-fade:after {
-  background: linear-gradient(to bottom,
-      rgba(245, 239, 231, 0) 0%,
-      rgb(245, 239, 231, 1) 100%);
+  background: linear-gradient(to bottom,rgba(245, 239, 231, 0) 0%, var(--background-color) 100%);
   bottom: 0;
   content: "";
   height: 50%;
@@ -293,19 +304,6 @@ h2 {
   }
 }
 
-/*Kantina sin spesifikke style */
-.kantine-bilde {
-  border: 1px solid #000;
-  height: auto;
-  width: 100%;
-}
-
-.kantine-bilde2 {
-  border: 1px solid #000;
-  height: auto;
-  margin: 10px;
-  width: 100%;
-}
 
 .main-img-campus-places {
   height: 450px;
@@ -373,10 +371,10 @@ li.capturebox-content {
 }
 
 .capturebox-primary-color {
-  background-color: rgb(216, 196, 182);
+  background-color: var(--primary-color);
 }
 .capturebox-secondary-color {
-  background-color: rgb(235, 227, 213);
+  background-color: var(--secondary-color);
 }
 
 .first-row-col1-capturebox {
@@ -409,7 +407,7 @@ li.capturebox-content {
   /*Design of the three white lines that make out the hamburger meny icon*/
   .menu-button::before,
   .menu-button::after {
-    background-color: #fff;
+    background-color: var(--text-white);
     border-radius: 2px;
     display: block;
     height: 4px;
@@ -440,11 +438,10 @@ li.capturebox-content {
     /*"0" is opacity and its function is tho hide the middle line when activated*/
   }
 
-  /*Turns one of the lines -405 degrees */
-  #menu-toggle:checked+.menu-button-container .menu-button::after {
+  /*Turns both of the lines -405 degrees */
+  #menu-toggle:checked+.menu-button-container .menu-button::after { /* " + " combines sibling elements*/
     margin-top: 0px;
-    /*Allows the line to use the whole flexbox*/
-    transform: rotate(-405deg);
+    transform: rotate(-405deg); /*Allows the line to use the whole flexbox*/
   }
 
   .menu-button-container {
@@ -460,6 +457,7 @@ li.capturebox-content {
     position: absolute;
     top: 0;
     width: 100%;
+    font-size: 1.3em;
   }
 
   #menu-toggle~.menu li { /* " ~ " makes it possbile for sibling elements to interact with eachother */
@@ -478,7 +476,7 @@ li.capturebox-content {
 
   .menu li {
     background-color: rgb(125, 137, 127, 0.95);
-    color: white;
+    color: var(--text-white);
     display: flex;
     justify-content: center;
     margin: 0;
@@ -553,28 +551,3 @@ li.capturebox-content {
     grid-area: auto;
   }
 }
-/*
-.image-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-}
-
-.image-container img {
-  max-width: 100%;
-  max-height: 100%;
-  cursor: pointer;
-  transition: transform 0.3s ease-in-out;
-}
-
-.image-container img:fullscreen {
-  transform: scale(1.5); /* You can adjust the scaling factor as needed 
-}
-
-/* Hide the browser's default anchor link styling 
-a {
-  text-decoration: none;
-  color: inherit;
-}
-*/
