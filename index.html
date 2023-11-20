@@ -9,61 +9,62 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-
     <!-- Headerbar, containing menu-->
-      <header>
-        <div>
-          <picture>
-            <img src="Bilder/Logo-raw.png" alt="logo" class="logo-raw"> 
-          </picture>
-        </div>
-        <input id="menu-toggle" type="checkbox"/>
-        <label class='menu-button-container' for="menu-toggle">
-        <div class='menu-button'></div>
+    <header>
+      <div>
+        <picture>
+          <img src="Bilder/Logo-raw.png" alt="logo" class="logo-raw" />
+        </picture>
+      </div>
+      <input id="menu-toggle" type="checkbox" />
+      <label class="menu-button-container" for="menu-toggle">
+        <div class="menu-button"></div>
       </label>
-        <ul class="menu">
-          <li><a href="index.html">Hjem</a></li>
-          <li><a href="topical.html">Topical</a></li>
-          <li><a href="kantine.html">Kantine</a></li>
-          <li><a href="bibliotek.html">Bibliotek</a></li> 
-          <li><a href="accessibility.html">Accessibility</a></li>
-        </ul>
-      </header>
-
+      <ul class="menu">
+        <li><a href="index.html">Hjem</a></li>
+        <li><a href="topical.html">Topical</a></li>
+        <li><a href="kantine.html">Kantine</a></li>
+        <li><a href="bibliotek.html">Bibliotek</a></li>
+        <li><a href="accessibility.html">Accessibility</a></li>
+      </ul>
+    </header>
 
     <article>
       <!-- Main picture -->
-        <picture title="BENJAMIN A.WARD">
-          <div class="img-fade">
-          <img src="Bilder/OsloMet-fasade.jpg" id="main-photo" alt="Bilde av OsloMet sin logo"> 
+      <picture title="BENJAMIN A.WARD">
+        <div class="img-fade">
+          <img src="Bilder/OsloMet-fasade.jpg" id="main-photo" alt="Bilde av OsloMet sin logo" />
         </div>
-        </picture>
+      </picture>
 
-       <!-- Main content -->
-        <section class="main-container">
-          <h1 id="main-title">>OsloMet: En Innovativ Bro til Menneskehetens Fremtid</h1>
-          <!-- Første rad med tekst og et bilde, mørk bakgrunn First row, containing text and picture, with dark background-->
-            <section class="main-flexbox-background">
+      <!-- Main content -->
+      <section class="main-container">
+        <h1 id="main-title">>OsloMet: En Innovativ Bro til Menneskehetens Fremtid</h1>
+        <!-- Første rad med tekst og et bilde, mørk bakgrunn First row, containing text and picture, with dark background-->
+        <section class="main-flexbox-background">
+          <div class="item">
+            <h2>Underoverskrift</h2>
+            <p>
+              OsloMet, eller Oslo Metropolitan University, er en institusjon som står som et fyrtårn for utdanning, forskning og innovasjon i Norges
+              hovedstad. Som en av de ledende universitetene i landet, spiller OsloMet en viktig rolle i å forme menneskehetens fremtid, spesielt når
+              det gjelder å møte utfordringene og mulighetene som ligger foran oss.
+            </p>
+          </div>
 
-                <div class="item">
-                  <h2>Underoverskrift</h2>
-                    <p>OsloMet, eller Oslo Metropolitan University, er en institusjon som står som et fyrtårn for utdanning,
-                      forskning og innovasjon i Norges hovedstad. Som en av de ledende universitetene i landet, spiller OsloMet 
-                      en viktig rolle i å forme menneskehetens fremtid, spesielt når det gjelder å møte utfordringene og mulighetene som 
-                      ligger foran oss.</p>
-                </div>
-              
-                <div class="item-picture">
-                    <picture>
-                        <img src="Bilder/StudenterPark.jpg" class="image-size" alt="Studenter som sitter i en park med pc´er"><!-- Top right picture-->
-                        <figcaption>Av: naassomz1 / pixabay.com</figcaption>
-                      </picture>
-                </div>
-            </section>
-            <!-- Second row (non-coloured), containing three columns with light coloured items -->
+          <div class="item-picture">
+            <picture>
+              <img src="Bilder/StudenterPark.jpg" class="image-size" alt="Studenter som sitter i en park med pc´er" /><!-- Top right picture-->
+              <figcaption>Av: naassomz1 / pixabay.com</figcaption>
+            </picture>
+          </div>
+        </section>
+
+        <!-- Second row (non-coloured), containing three columns with light coloured items -->
+        <!--
             <section class="main-flexbox">
-                    <div class="item-background">  <!-- first column -->
-                        <h2>Velkommen til oss</h2>
+                    <div class="item-background">  <!-- first column 
+                       
+                      <h2>Velkommen til oss</h2>
                 <ul>
                  <li>OsloMet er landets tredje største universitet, med ca. 22.000 studenter og 2100 ansatte.</li>
                  <li>Her finner du alle utdanninger på OsloMet, velg blant over 400 <a href="https://www.oslomet.no/studier/studieoversikt">studietilbud</a>.</li>
@@ -72,9 +73,8 @@
                  <li>Her finner du DIN fremtid.</li>
                 </ul>
                     </div>
-                    <div class="item-background"> <!-- second column -->
+                    <div class="item-background"> <!-- second column 
                       <h2>Jobbmuligheter</h2>
-                <p>
                   <ul>
                     <li>Sterkt samarbeid med næringslivet.</li>
                     <li>Muligheter for praksis, internship, og prosjektsamarbeid</li>
@@ -82,10 +82,8 @@
                     <li>Veiledning, jobbsøkerkurs, og nettverksmuligheter.</li>
                     <li>Innenfor mange studier, så er studenter i jobb allerede før de fullfører studiene</li>
                   </ul>
-                  
-                  </p>
                     </div>
-                    <div class="item-background"><!-- third column-->
+                    <div class="item-background"><!-- third column
                       <h2>Kom til Oslo</h2>
                 <ul>
                  <li>Oslo er hovedstaden i Norge.</li>
@@ -95,80 +93,109 @@
                  <li>Byen har et omfattende kollektivtransportsystem, inkludert busser, trikker og et metronettverk.</li>
                     </div>
             </section>
-          </section>
-          <div class="main-flexbox">
-            <div class="capturebox-container">
-              <ul class="capturebox">
-                <li class="capturebox-content firstlink linkblock">
-                  <h3>TOPICAL</h3>
-                  <p>LES MER</p>
+
+
+
+-->
+        <div class="main-flexbox">
+          <div class="item-background">
+            <!--first column-->
+            <div>
+              <h2>Fordeler</h2>
+              <ul>
+                <li>
+                  Reduserer spredningen av falske nyheter og feilinformasjon. KI kan skape overbevisende falske fortellinger og et forbud kan fungere
+                  som en beskyttelse mot spredning av dem. Samtidig kan den sikre at informasjonen som presenteres for publikum er autentisk og uten
+                  manipulasjon gjennom KI.
                 </li>
-                <li class="capturebox-content secondlink linkblock">
-                  <h3>OSLOMET KANTINE</h3>
-                  <p>LES MER</p>
+                <li>
+                  Alle politiske representanter kan konkurrere mer autentisk og rettferdig. Det er jo tross alt representanten som skal overbevise
+                  publikum og ikke en middelmann som AI.
                 </li>
-                <li class="capturebox-content thirdlink linkblock">
-                  <h3>BIBLIOTEK</h3>
-                  <p>LES MER</p>
+                <li>
+                  AI bruker store mengder personlig data til å nå det endelige resultatet. Ved å forby AI i valgkampanjer så vil folkets personvern
+                  respekteres. I tillegg vil trusselen om AI-manipulasjon og villedende kampanjepraksis reduseres betraktelig, som igjen styrker
+                  tilliten til demokratiet.
                 </li>
               </ul>
             </div>
           </div>
-        </section>
-            <!-- Third row, with a picture and a text section -->
-            <section class="main-flexbox-background">
+          <div class="item-background">
+            <!--Second column-->
+            <h2>Ulemper</h2>
+            <ul>
+              <li>
+                Et forbud mot AI-generert innhold kan hindre teknologiske fremskritt og innovasjoner som kan brukes positivt i politiske kampanjer, og
+                hindre fremgang på feltet.
+              </li>
+              <li>
+                Å forby AI-generert innhold kan sees på som et brudd på ytringsfriheten da det begrenser en form for uttrykk og teknologisk bruk for
+                politisk kommunikasjon.
+              </li>
+              <li>
+                Et forbud mot AI-generert innhold kan være utfordrende ettersom å bestemme opprinnelsen og autentisiteten til digitalt innhold blir
+                stadig mer komplisert på grunn av teknologier i utvikling. i tillegg kan forbudet øke bruken av AI i politisk kampanje fortsette i den
+                underjordiske scenen. Med dårlig regulering vil ukontrollerbar propaganda bare spres i mørket.
+              </li>
+            </ul>
+          </div>
+        </div>
 
-                <div class="item-picture"><!-- bottom left picture-->
-                    <picture>
-                        <img src="Bilder/HiO-Fasade.jpg" class="image-size" alt="Høyskolen i Oslo">
-                        <figcaption>Av: naassomz1 / pixabay.com</figcaption>
-                    </picture>
-                </div> 
-                <div class="item">
-                  <h2>Litt om oss</h2>
-          <p> 
-            OsloMetropolitan University, vanligvis kjent som OsloMet, er en fremtredende høyere utdanningsinstitusjon lokalisert i Oslo, Norge.
-            Opprettet i 2018, er OsloMet en relativt ung universitet i formell status, men den har røtter som strekker seg mye lenger tilbake.
-            Det ble dannet som et resultat av fusjonen mellom Høgskolen i Oslo og Akershus og Høgskolen i Oslo, to anerkjente institusjoner i sine egne rettigheter.
-          </p>
-          <p>
-            Før fusjonen hadde disse forgjengerinstitusjonene rike historier som går tilbake flere tiår. Høgskolen i Oslo og Akershus hadde 
-            et sterkt fokus på profesjonelle og anvendte vitenskaper, og tilbød et bredt spekter av programmer innen områder som helse, ingeniørfag 
-            og lærerutdanning. Høgskolen i Oslo hadde derimot et bredere akademisk omfang, med fagområder som samfunnsvitenskap, humaniora og naturvitenskap.
-          </p>
-              </div>   
-            </section>
+        <!-- Third row, with a picture and a text section -->
+        <section class="main-flexbox-background">
+          <div class="item-picture">
+            <!-- bottom left picture-->
+            <picture>
+              <img src="Bilder/HiO-Fasade.jpg" class="image-size" alt="Høyskolen i Oslo" />
+              <figcaption>Av: naassomz1 / pixabay.com</figcaption>
+            </picture>
+          </div>
+          <div class="item">
+            <h2>Litt om oss</h2>
+            <p>
+              OsloMetropolitan University, vanligvis kjent som OsloMet, er en fremtredende høyere utdanningsinstitusjon lokalisert i Oslo, Norge.
+              Opprettet i 2018, er OsloMet en relativt ung universitet i formell status, men den har røtter som strekker seg mye lenger tilbake. Det
+              ble dannet som et resultat av fusjonen mellom Høgskolen i Oslo og Akershus og Høgskolen i Oslo, to anerkjente institusjoner i sine egne
+              rettigheter.
+            </p>
+            <p>
+              Før fusjonen hadde disse forgjengerinstitusjonene rike historier som går tilbake flere tiår. Høgskolen i Oslo og Akershus hadde et
+              sterkt fokus på profesjonelle og anvendte vitenskaper, og tilbød et bredt spekter av programmer innen områder som helse, ingeniørfag og
+              lærerutdanning. Høgskolen i Oslo hadde derimot et bredere akademisk omfang, med fagområder som samfunnsvitenskap, humaniora og
+              naturvitenskap.
+            </p>
+          </div>
         </section>
-      
+      </section>
+      <section>
+        <ul></ul>
+      </section>
     </article>
 
-  
     <footer>
-        <div class="footer-container">
-          <div class="footer-content">
-            <div>
-              <picture>
-                <img src="Bilder/Logo.png" alt="logo" class="logo-footer"> 
-              </picture>
-            </div>
-            <div class="footer-links">
-              <ul class="footer-menu">
-                <li><a href="index.html">Hjem</a></li>
-                <li><a href="topical.html">Topical</a></li>
-                <li><a href="kantine.html">Campus</a></li>
-                <li><a href="bibliotek.html">Bibliotek</a></li>
-                <li><a href="accessibility.html">Accessibility</a></li>
-                <li><a href="#">Flere linker</a></li>
-                <li><a href="#">Flere linker</a></li>
-                <li><a href="#">Flere linker</a></li>
-                <li><a href="#">Osv..</a></li>
-              </ul>
-            </div>
+      <div class="footer-container">
+        <div class="footer-content">
+          <div>
+            <picture>
+              <img src="Bilder/Logo.png" alt="logo" class="logo-footer" />
+            </picture>
           </div>
-          <div class="footer-bottom">&copy; Canvas 45, all rights reserved.</div>
+          <div class="footer-links">
+            <ul class="footer-menu">
+              <li><a href="index.html">Hjem</a></li>
+              <li><a href="topical.html">Topical</a></li>
+              <li><a href="kantine.html">Campus</a></li>
+              <li><a href="bibliotek.html">Bibliotek</a></li>
+              <li><a href="accessibility.html">Accessibility</a></li>
+              <li><a href="#">Flere linker</a></li>
+              <li><a href="#">Flere linker</a></li>
+              <li><a href="#">Flere linker</a></li>
+              <li><a href="#">Osv..</a></li>
+            </ul>
+          </div>
         </div>
-      </footer>
-
-
+        <div class="footer-bottom">&copy; Canvas 45, all rights reserved.</div>
+      </div>
+    </footer>
   </body>
 </html>
