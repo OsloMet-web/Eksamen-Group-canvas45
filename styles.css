@@ -217,7 +217,7 @@ footer a:focus {
 }
 
 .main-container li {
-  font-size: 1.2rem;
+  font-size: 1.rem;
   font-weight: 400;
 }
 
@@ -466,9 +466,6 @@ li.capturebox-content {
     grid-area: 2 / 3 / 3 / 8;
   }
 
-  .item p {
-    font-size: 1.4em;
-  }
   }
 
 @media (max-width: 625px) {
