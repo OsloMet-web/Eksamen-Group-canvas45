@@ -33,7 +33,8 @@ body {
   flex-direction: column;
   gap: 1em;
   margin: 0 auto;
-  width: 97%;
+  width: 100%;
+
   justify-content: space-around;
 }
 
@@ -347,18 +348,21 @@ li.capturebox-content {
   background-image: url(Bilder/regjering-KI.jpg);
   color: var(--text-white);
   background-position: center;
+  text-shadow: 0 0 4px rgb(0, 0, 0)
 }
 .secondlink {
   grid-area: 1 / 4 / 3 / 6;
   background-image: url(Bilder/kantine2.jpg);
   color: var(--text-white);
   background-position: center;
+  text-shadow: 0 0 4px rgb(0, 0, 0)
 }
 .thirdlink { 
   grid-area: 1 / 6 / 3 / 8;
   background-image: url(Bilder/oslomet-bibliotek-p48.jpg);
   color: var(--text-white);
   background-position: center;
+  text-shadow: 0 0 4px rgb(0, 0, 0); 
 }
 
 .linkblock { /*How to create hover effect: https://www.w3schools.com/howto/howto_css_zoom_hover.asp*/
