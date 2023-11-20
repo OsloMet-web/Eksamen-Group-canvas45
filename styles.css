@@ -277,9 +277,9 @@ h2 {
 
 .topical-image-size {
   display: block;
-  height: 50vh;
-  object-fit: cover;
-  object-position: top;
+  height: auto;
+  object-fit: contain;
+  object-position: center;
   width: 100%;
 }
 
