@@ -257,53 +257,6 @@ h2 {
   right: 0;
 }
 
-.slides {
-  border-radius: 40px;
-  height: 70vh;
-  overflow: hidden;
-  position: relative;
-}
-
-.slide {
-  animation: slide-show 12s infinite;
-  height: 100%;
-  inset: 0;
-  margin: 15px;
-  opacity: 0;
-  position: absolute;
-}
-
-.slide-2 {
-  animation-delay: 6s;
-}
-
-.slide picture img {
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
-  width: 100%;
-}
-
-@keyframes slide-show {
-  0% {
-    opacity: 0;
-  }
-
-  10% {
-    opacity: 1;
-  }
-
-  20%,
-  30% {
-    opacity: 1;
-    scale: 1.05;
-  }
-
-  50% {
-    opacity: 0;
-  }
-}
-
 
 .main-img-campus-places {
   height: 450px;
