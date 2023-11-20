@@ -272,22 +272,18 @@ h2 {
   display: block;
   height: auto;
   object-fit: cover;
-  width: 100%;
+  width: 100%; bottom: auto;
 }
-
 
 .logo-raw {
   width: 100px;
   height: auto;
-  color: white;
   margin-top: 0.5em;
 }
-.logo{
-  
-}
 
-span.oslomet {
-  color: rgb(247, 214, 3);
+.logo-footer{
+  width: 200px;
+  height: auto;  
 }
 
 .capturebox-container {
@@ -343,18 +339,26 @@ li.capturebox-content {
   grid-area: 2 / 4 / 3 / 8;
 }
 
+.imagelink-bg {
+  filter: blur(8px);
+} 
 .firstlink {
-  grid-area: 1 / 1 / 3 / 3;
-  background-image: ;
+  grid-area: 1 / 2 / 3 / 4;
+  background-image: url(Bilder/regjering-KI.jpg);
+  color: var(--text-white);
+  background-position: center;
 }
 .secondlink {
-  grid-area: 1 / 3 / 3 / 5;
+  grid-area: 1 / 4 / 3 / 6;
+  background-image: url(Bilder/kantine2.jpg);
+  color: var(--text-white);
+  background-position: center;
 }
 .thirdlink { 
-  grid-area: 1 / 5 / 3 / 7;
-}
-.forthlink { 
-  grid-area: 1 / 7 / 3 / 9;
+  grid-area: 1 / 6 / 3 / 8;
+  background-image: url(Bilder/oslomet-bibliotek-p48.jpg);
+  color: var(--text-white);
+  background-position: center;
 }
 
 .linkblock { /*How to create hover effect: https://www.w3schools.com/howto/howto_css_zoom_hover.asp*/
@@ -381,9 +385,6 @@ li.capturebox-content {
   }
 
 @media (max-width: 1040px) {
-  body {
-    overflow: scroll;
-  }
   #main-title {
     font-size: 3.5rem;
   }
@@ -513,9 +514,6 @@ li.capturebox-content {
   }
 
 @media (max-width: 625px) {
-  body {
-    overflow-x: hidden ;
-  }
   #main-title {
     font-size: 2.5rem;
   }
@@ -534,8 +532,8 @@ li.capturebox-content {
   .second-row-col2-capturebox,
   .firstlink,
   .secondlink,
-  .thirdlink,
-  .forthlink {
+  .thirdlink {
     grid-area: auto;
+    grid-auto-flow: dense;
   }
 }

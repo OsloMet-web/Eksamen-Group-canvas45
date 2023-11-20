@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>HTML Page</title>
+    <title>Accessibility</title>
     <meta charset="UTF-8" />
     <meta name="description" content="Ekesamen" />
     <meta name="keywords" content="HTML, CSS" />
@@ -10,7 +10,11 @@
   </head>
   <body>
     <header>
-      <div>//LOGO//</div>
+      <div>
+        <picture>
+          <img src="Bilder/Logo-raw.png" alt="logo" class="logo-raw" />
+        </picture>
+      </div>
       <input id="menu-toggle" type="checkbox" />
       <label class="menu-button-container" for="menu-toggle">
         <div class="menu-button"></div>
@@ -30,9 +34,9 @@
         <section class="main-flexbox">
           <div class="item">
             <p>
-              Tekst om performance, Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique libero dolorem exercitationem doloribus ipsam
-              consequuntur iste laboriosam doloremque iusto blanditiis deleniti, perspiciatis adipisci impedit, tenetur non voluptatibus dolores a
-              quasi?
+              Vi brukte google lighthouse som tilgjengelighetsverktøy. Dette programmet skannet nettsiden vår for mulige feil og mangler som kunne
+              ødelegge for sidens funksjonalitet og kvalitet. Den undersøker blant annet manglende alt-attributter, fargekontraster og nettsidens
+              hastighet. Under kan en se bilder/ screenshots av analysene for hver enkelt side.
             </p>
           </div>
           <div class="item-picture">
@@ -45,16 +49,35 @@
           </div>
           <div class="item">
             <p>
-              Tekst om accessibility, Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas harum molestias tempora fugit in iste reiciendis
-              veniam minima sapiente nihil molestiae maiores nostrum sit, et blanditiis, esse saepe cum nemo?
+              På bildene over kan en se at hver side kommer nikså godt ut på testen. Google lighthouse tester hver enkelt side sin ytelse
+              (performance), tilgjengelighet (accessibility), beste praksis (best practices), søkemotoroptimalisering (SEO) og progressiv webapp
+              (PWA). Ytelse handler om hastigheten til nettsiden og tilgjengelighet tester hvordan nettstedet er tilrettelagt for alle brukere.
+              Lighthouse søkemotoroptimalisering tester nettsidens synlighet og for ting som betyr noe for søkemotorene, mens PWA funksjonen sjekker
+              om sidene oppfyller kravene til å kunne være en lovlig nettside.
+            </p>
+            <p>
+              Da vi først brukte google lighthouse viste rapportene oss en rekke ulike problemer. Noe som gjaldt for de fleste av sidene var manglende
+              alt-tekst på bilder. Dette var heldigvis enkelt for oss å fikse. På topical-siden hadde vi originalt et slideshow. Dette ble ikke tatt
+              godt imot av google lighthouse fordi det gikk negativt ut over sidens lastetid. Vi konkluderte også med at slideshowet ikke hadde noen
+              spesiell funksjon eller nytte. Vi fikk også beskjed om at noen av bildene gjorde at lastetiden ble tregere. Da byttet vi ut noen bilder
+              og gjorde noen andre mindre.
+            </p>
+
+            <p>
+              Når det gjelder egen kreativitet brukte vi ganske lang tid på å finne ut hvilken fargepallette vi skulle velge. Her opplevde vi at
+              google lighthouse ikke var til særlig stor hjelp fordi programmet analyserer kontrastene mellom fargene og ikke hvordan fargene
+              harmonerer med hverandre, eller hvor behagelige de er å se på. Her måtte vi rett og slett være kreative og prøve å finne passende farger
+              selv. Etter en god del frem og tilbake er vi trygge på at vi fant en god fargesammensetning. Selve formateringen av de ulike sidene fant
+              vi også hovedsaklig ut selv. Her mener vi hvordan teksten skal stå i forhold til bildene.
             </p>
           </div>
         </section>
         <section class="main-flexbox">
           <div class="item">
             <p>
-              Tekst Oppsumering?, Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi ullam voluptates, fugit dignissimos id corporis
-              debitis, doloremque rem, deserunt sed sint tempore? Quos consequuntur officiis, praesentium explicabo ut quia? Quas!
+              Alt i alt trivdes vi med å bruke google lighthouse og vi syntes at programmets analyser hjalp vårt arbeid. Likevel var det en del
+              beslutninger vi måtte ta selv. Vi har konkludert med at et program som google lighthouse ikke kan hjelpe med alt. Selv om en får en
+              perfekt score betyr det ikke nødvendigvis at nettsiden er perfekt. For kreativitet har nemlig ingen grenser.
             </p>
           </div>
           <div class="item-picture">
@@ -67,7 +90,11 @@
     <footer>
       <div class="footer-container">
         <div class="footer-content">
-          <div class="footer-logo">/LOGO/</div>
+          <div class="footer-logo">
+            <picture>
+              <img src="Bilder/Logo.png" alt="logo" class="logo-footer" />
+            </picture>
+          </div>
           <div class="footer-links">
             <ul class="footer-menu">
               <li><a href="index.html">Hjem</a></li>
