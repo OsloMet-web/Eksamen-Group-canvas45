@@ -7,13 +7,14 @@
       <meta name="description" content="Ekesamen" />
       <meta name="keywords" content="HTML, CSS" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <link rel="stylesheet" href="styles.css" />
+      <link rel="stylesheet" href="css-style/styles.css" />
     </head>
     <body>
+        <!--header-->
       <header>
         <div>
           <picture>
-            <img src="Bilder/Logo-raw.png" alt="logo" class="logo-raw" />
+            <img src="bilder/Logo-raw.png" alt="logo" class="logo-raw" />
           </picture>
         </div>
         <input id="menu-toggle" type="checkbox" />
@@ -30,10 +31,10 @@
       </header>
 
       <article>
-        <!-- Intro + picture -->
+        <!-- Introduction containing a header, text and picture  -->
         <h1>Kritisk tenkning</h1>
         <section class="main-container">
-          <div class="main-flexbox-background">
+          <section class="main-flexbox-background">
             <div class="item">
               <h2>Fake news skader troverdigheten til nyhetskilder</h2>
               <p>
@@ -44,15 +45,17 @@
                 <a href="https://mashable.com/video/republican-attack-ad-biden-reelection-ai">her.</a>
               </p>
             </div>
+            <!--image found using this link: 
+            https://misinforeview.hks.harvard.edu/article/fake-news-limited-effects-on-political-participation/ -->
             <div class="item">
               <picture>
-                <img src="Bilder/Fake-news.jpg" alt="American Fake News" class="image-size" />
+                <img src="bilder/Fake-news.jpg" alt="American Fake News" class="image-size" />
                 <figcaption>Foto: U_5785QXTFEN / Pixabay.com</figcaption>
               </picture>
             </div>
-          </div>
-          <!-- short information and links for further information. divided in three columns -->
-          <div class="main-flexbox">
+          </section>
+          <!-- short information and links for further information. divided in three columns with picture below -->
+          <section class="main-flexbox">
             <div class="item-background">
               <!-- first column -->
               <h2>Epistemologi</h2>
@@ -61,8 +64,9 @@
                 mye informasjon om at vi må være kritisk til hva som blir fortalt. Se mer om
                 <a href="https://snl.no/epistemologi">epistomologi her</a>
               </p>
+              <!--image taken from the same link as mentioned in text.-->
               <picture>
-                <img src="Bilder/filosof-vatikanet.jpg" alt="filosofer i vatikanet" class="image-size" />
+                <img src="bilder/filosof-vatikanet.jpg" alt="filosofer i vatikanet" class="image-size" />
                 <figcaption>Platon og Aristoteles, Skolen i Athen</figcaption>
               </picture>
             </div>
@@ -74,8 +78,10 @@
                 fakta, hendelser og uttalelser. Ønsker du å vite mer om dette kan kan du finne
                 <a href="https://www.cits.ucsb.edu/fake-news/what-is-fake-news">her.</a>
               </p>
+              <!-- Image found from this link:
+              https://www.axios.com/2019/06/05/americans-fake-news-problem-terrorism -->
               <picture>
-                <img src="Bilder/fakenews2.jpg" alt="fake news som overlapper en bakgrunn med hexadecimaler" class="image-size" />
+                <img src="bilder/fakenews2.jpg" alt="fake news som overlapper en bakgrunn med hexadecimaler" class="image-size" />
                 <figcaption>Foto: stevanovicigor/iStockphoto</figcaption>
               </picture>
             </div>
@@ -88,17 +94,17 @@
                 <a href="https://www.regjeringen.no/no/tema/statlig-forvaltning/ikt-politikk/KI-strategi/id2639883/">regjerningen.no</a>
               </p>
               <picture>
-                <img src="Bilder/regjering-KI.jpg" alt="dame som ser på en robot" class="image-size" />
+                <img src="bilder/regjering-KI.jpg" alt="dame som ser på en robot" class="image-size" />
                 <figcaption>Foto: Ars Electronica/vog.photo</figcaption>
               </picture>
             </div>
-          </div>
+          </section>
           <!-- problem introduction -->
-          <div class="main-flexbox">
+          <section class="main-flexbox">
             <h2>Ny norsk lov mot KI under valgkamp?</h2>
-          </div>
+          </section>
           <!-- Pros and cons: divided in 2 columns -->
-          <div class="main-flexbox">
+          <section class="main-flexbox">
             <div class="item-background">
               <!--first column-->
               <div>
@@ -140,12 +146,12 @@
                 </li>
               </ul>
             </div>
-          </div>
-          <div class="main-flexbox">
-            <!-- Conclusion: Simple  -->
+          </section>
+          <section class="main-flexbox">
+            <!-- conclusion written in one text section. -->
             <h2>Vår mening</h2>
-          </div>
-          <div class="main-flexbox-background">
+          </section>
+          <section class="main-flexbox-background">
             <div class="item">
               <p>
                 Beslutningen om å vedta lovforslaget som forbyr bruk av kunstig intelligens i politiske kampanjer før neste valg er en kompleks og
@@ -168,16 +174,16 @@
                 heler et syn av den politiske representanten istedenfor realitet.
               </p>
             </div>
-          </div>
+          </section>
         </section>
       </article>
-
+      <!--footer section-->
       <footer>
         <div class="footer-container">
           <div class="footer-content">
             <div class="footer-logo">
               <picture>
-                <img src="Bilder/Logo.png" alt="logo" class="logo-footer" />
+                <img src="bilder/Logo.png" alt="logo" class="logo-footer" />
               </picture>
             </div>
             <div class="footer-links">

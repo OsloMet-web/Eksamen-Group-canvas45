@@ -6,14 +6,14 @@
     <meta name="description" content="Ekesamen" />
     <meta name="keywords" content="HTML, CSS" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="css-style/styles.css" />
   </head>
   <body>
     <!-- Headerbar, containing menu-->
     <header>
       <div>
         <picture>
-          <img src="Bilder/Logo-raw.png" alt="logo" class="logo-raw" />
+          <img src="bilder/Logo-raw.png" alt="logo" class="logo-raw" />
         </picture>
       </div>
       <input id="menu-toggle" type="checkbox" />
@@ -33,14 +33,14 @@
       <!-- Main picture -->
       <picture title="BENJAMIN A.WARD">
         <div class="img-fade">
-          <img src="Bilder/OsloMet-fasade.jpg" id="main-photo" alt="Bilde av OsloMet sin logo" />
+          <img src="bilder/OsloMet-fasade.jpg" id="main-photo" alt="Bilde av OsloMet sin logo" />
         </div>
       </picture>
 
       <!-- Main content -->
       <section class="main-container">
         <h1 id="main-title">OsloMet: En Innovativ Bro til Menneskehetens Fremtid</h1>
-        <!-- Første rad med tekst og et bilde, mørk bakgrunn First row, containing text and picture, with dark background-->
+        <!-- First row containing a text and and a picture (right). Inside a brown box-->
         <section class="main-flexbox-background">
           <div class="item">
             <h2>Underoverskrift</h2>
@@ -52,19 +52,17 @@
           </div>
 
           <div class="item-picture">
-            <picture>
-              <img src="Bilder/StudenterPark.jpg" class="image-size" alt="Studenter som sitter i en park med pc´er" /><!-- Top right picture-->
+            <picture><!-- Top right picture-->
+              <img src="bilder/StudenterPark.jpg" class="image-size" alt="Studenter som sitter i en park med pc´er" />
               <figcaption>Av: naassomz1 / pixabay.com</figcaption>
             </picture>
           </div>
         </section>
 
         <!-- Second row (non-coloured), containing three columns with light coloured items -->
-
         <section class="main-flexbox">
           <div class="item-background">
-            <!-- first column -->
-
+            <!-- first column (beige)-->
             <h2>Velkommen til oss</h2>
             <ul>
               <li>OsloMet er landets tredje største universitet, med ca. 22.000 studenter og 2100 ansatte.</li>
@@ -78,7 +76,7 @@
             </ul>
           </div>
           <div class="item-background">
-            <!-- second column -->
+            <!-- second column (beige) -->
             <h2>Jobbmuligheter</h2>
             <ul>
               <li>Sterkt samarbeid med næringslivet.</li>
@@ -89,7 +87,7 @@
             </ul>
           </div>
           <div class="item-background">
-            <!-- third column -->
+            <!-- third column (beige) -->
             <h2>Kom til Oslo</h2>
             <ul>
               <li>Oslo er hovedstaden i Norge.</li>
@@ -101,12 +99,11 @@
           </div>
         </section>
 
-        <!-- Third row, with a picture and a text section -->
+        <!-- Third row, with a picture (left) and a text section -->
         <section class="main-flexbox-background">
           <div class="item-picture">
-            <!-- bottom left picture-->
-            <picture>
-              <img src="Bilder/HiO-Fasade.jpg" class="image-size" alt="Høyskolen i Oslo" />
+            <picture> <!-- bottom left picture-->
+              <img src="bilder/HiO-Fasade.jpg" class="image-size" alt="Høyskolen i Oslo" />
               <figcaption>Av: naassomz1 / pixabay.com</figcaption>
             </picture>
           </div>
@@ -127,11 +124,9 @@
           </div>
         </section>
       </section>
-      <section>
-        <ul></ul>
-      </section>
     </article>
 
+    <!-- Footer-->
     <footer>
       <div class="footer-container">
         <div class="footer-content">
