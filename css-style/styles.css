@@ -198,16 +198,7 @@ footer a:focus {
   color: rgb(149, 141, 254)
 }
 
-#main-photo {
-  width: 100%;
-}
-
-.item-picture {
-  align-items: center;
-  display: flex;
-  flex: 1;
-}
-
+/* font formatting */
 #main-title {
   font-size: 5rem;
   font-weight: 600;
@@ -248,11 +239,23 @@ h2 {
   text-align: center;
 }
 
+/* picture formats*/
 .img-fade {
   position: relative;
 }
 
-/*Adds fade to the image, making the entrance */
+
+#main-photo {
+  width: 100%;
+}
+
+.item-picture {
+  align-items: center;
+  display: flex;
+  flex: 1;
+}
+
+/*Adds fade to the image*/
 .img-fade:after {
   background: linear-gradient(to bottom,rgba(245, 239, 231, 0) 0%, var(--background-color) 100%);
   bottom: 0;
